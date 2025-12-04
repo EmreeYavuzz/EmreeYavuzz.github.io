@@ -20,26 +20,24 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Emre Yavuz",
+  title: "Merhaba, Ben Emre Yavuz",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  "Mobil, web ve backend tarafında projeler geliştirdim; yapay zeka, görüntü işleme ve gerçek zamanlı sistemler üzerine çalışmalar yaptım. Son dönemde ağırlıklı olarak gömülü sistemler, C programlama ve mikrodenetleyici tabanlı düşük seviye yazılımla ilgileniyorum."
+	),
+  resumeLink: "resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/Rlueer",
+  linkedin: "https://www.linkedin.com/in/emre-yavuz-4b849a18b",
+  gmail: "emreyavuzz2001@gmail.com",
+  instagram:  "https://www.instagram.com/mr_yvz01/",
+  letterboxd: "http://boxd.it/ewOy9",
+  
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,16 +46,13 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Neler yapıyorum",
+  subTitle: "Gömülü sistemler, FPGA tabanlı dijital tasarım ve düşük seviye yazılım",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ VHDL/Verilog ile FPGA üzerinde sayısal tasarım ve testbench doğrulama"),
+    emoji("⚡ UART / SPI / I²C gibi protokollerle düşük seviye haberleşme"),
+    emoji("⚡ Gerçek zamanlı (RTOS) ve gömülü C/C++ ile sürücü/ara katman geliştirme"),
+    emoji("⚡ Vivado, ModelSim ve logic analyzer ile donanım–yazılım debug")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -126,10 +121,10 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      schoolName: "Gebze Teknik Üniversitesi",
+      logo: require("./assets/images/gtulogo.png"),
+      subHeader: "Bilgisayar Mühendisliği (İngilizce)",
+      duration: "Eylül 2020 - Eylül 2025",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -137,10 +132,10 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
+      schoolName: "Esenyurt Anadolu lisesi",
+      logo: require("./assets/images/eal.png"),
+      subHeader: "",
+      duration: "Eylül 2015 - Haziran 2019",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
@@ -163,7 +158,9 @@ const techStack = {
     {
       Stack: "Programming",
       progressPercentage: "60%"
-    }
+    },
+	
+	
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -171,35 +168,38 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "FPGA Tasarım Stajyeri",
+      company: "TÜBİTAK BİLGEM",
+      companylogo: require("./assets/images/tubitaklogo.png"),
+      date: "Temmuz 2025 – Ağustos 2025",
+      desc: "VHDL kullanarak DO-254 uyumlu UART IP çekirdeği tasarladım, doğruladım ve MicroBlaze tabanlı gömülü sisteme entegre ettim.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "VHDL kullanarak UART tabanlı bir dijital modül tasarladım ve FSM yapısını ModelSim’de testbench ile doğruladım",
+		"Modülü Vivado’da geliştirdim; oversampling ve senkronizatör ekleyerek daha kararlı ve güvenilir çalışmasını sağladım.",
+		"Daha sonra tasarımı AXI4-Lite arayüzüyle paketleyip MicroBlaze işlemcili sisteme entegre ettim.",
+		"SDK’da C ile kontrol yazılımı yazıp loopback testlerini tamamlayarak sistemi FPGA üzerinde çalışır hale getirdim.",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Mobil Uygulama / Haberleşme Stajyeri",
+      company: "ORTEM Electronics",
+      companylogo: require("./assets/images/ortemlogo.png"),
+      date: "Ocak 2025 – Şubat 2025",
+      desc: "Flutter tabanlı mobil uygulama üzerinden seri haberleşme (UART/CAN) verilerini işleyen bir araç durum simülasyon sistemi geliştirdim.",
+      descBullets: [
+        "usb_serial kütüphanesi ile Android cihazlarda gerçek zamanlı bağlantı ve yeniden bağlanma mekanizmaları geliştirdim.",
+        "CAN frame parsing, veri tamponlama ve paket bütünlüğü kontrol algoritmaları tasarladım.",
+        "Gösterge paneli UI bileşenlerini (hız, odometre, vites, farlar) CAN mesajlarıyla senkronize ettim.",
+        "Kesinti, paket kaybı ve veri bütünlüğü problemleri için hata toleranslı özel algoritmalar geliştirdim.",
+        "Uygulamayı Flutter Clean Architecture prensipleriyle modüler ve ölçeklenebilir hale getirdim."
+      ]
     }
   ]
 };
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -324,7 +324,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +343,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +356,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -365,7 +365,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
@@ -373,17 +373,17 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "emreyavuzz2001@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

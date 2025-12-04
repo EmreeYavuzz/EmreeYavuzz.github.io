@@ -1,12 +1,45 @@
 @import "../../_globalColor";
 
 .social-media-div {
-  font-size: 2em;
+  font-size: 5em;
+  display: flex;              /* ← ikonları tek satıra dizer */
+  align-items: center;        /* ← dikey hizalama düzgün olsun */
+  gap: 3px;  
 }
 
 .icon-button {
   margin-bottom: 10px;
 }
+
+.icon-button.letterboxd {
+  background-color: #131722; /* karanlık gri (diğerleriyle uyumlu) */
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: $textColorDark;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+
 
 .icon-button i {
   color: $textColorDark;
