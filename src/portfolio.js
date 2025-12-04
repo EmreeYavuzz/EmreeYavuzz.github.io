@@ -22,9 +22,9 @@ const illustration = {
 const greeting = {
   username: "Emre Yavuz",
   title: "Merhaba, Ben Emre Yavuz",
-  subTitle: emoji(
-  "Mobil, web ve backend tarafında projeler geliştirdim; yapay zeka, görüntü işleme ve gerçek zamanlı sistemler üzerine çalışmalar yaptım. Son dönemde ağırlıklı olarak gömülü sistemler, C programlama ve mikrodenetleyici tabanlı düşük seviye yazılımla ilgileniyorum."
-	),
+  subTitle: 
+  "Mobil, web ve backend tarafında projeler geliştirdim; yapay zeka, görüntü işleme ve gerçek zamanlı sistemler üzerine çalışmalar yaptım. Son dönemde ağırlıklı olarak gömülü sistemler, C programlama ve mikrodenetleyici tabanlı düşük seviye yazılımla ilgileniyorum.",
+	
   resumeLink: "resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -125,19 +125,21 @@ const educationInfo = {
       logo: require("./assets/images/gtulogo.png"),
       subHeader: "Bilgisayar Mühendisliği (İngilizce)",
       duration: "Eylül 2020 - Eylül 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc:
+		  "GTÜ’de İngilizce bilgisayar mühendisliği eğitimi alarak algoritmalar, yazılım geliştirme prensipleri ve donanım temelli derslerde güçlü bir temel oluşturdum.",
+		descBullets: [
+		  "C, C++, Java ve Python ile projeler,uygulamalar geliştirdim",
+		  "Mobil, web ve backend alanlarında proje deneyimleri edindim",
+		  "Yapay zeka ve bilgisayarla görme, gömülü sistemlerle ilgili çalışmalar yaptım"
+		]
     },
     {
       schoolName: "Esenyurt Anadolu lisesi",
       logo: require("./assets/images/eal.png"),
       subHeader: "",
       duration: "Eylül 2015 - Haziran 2019",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "YKS 2020 Sayısal Sıralaması: 8.438.",
+      descBullets: []
     }
   ]
 };
@@ -147,20 +149,18 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+	{
+      Stack: "İngilizce",
+      progressPercentage: "80%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Programlama / Algoritma",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    },
-	
-	
+      Stack: "İletişim ve Ekip Çalışması",
+      progressPercentage: "100%"
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -206,14 +206,14 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projeler",
+  subtitle: "SOME",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
@@ -283,7 +283,7 @@ const achievementSection = {
           name: "View Google Assistant Action",
           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
-      ]
+      ]	
     },
 
     {
@@ -300,7 +300,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -369,10 +369,10 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("İletişim"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
+  "Proje, iş fırsatı veya herhangi bir konuda iletişime geçebilirsiniz.",
+  number: "",
   email_address: "emreyavuzz2001@gmail.com"
 };
 

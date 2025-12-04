@@ -11,7 +11,9 @@ import {
   blogSection,
   talkSection,
   achievementSection,
-  resumeSection
+  resumeSection,
+  educationInfo,
+  bigProjects,
 } from "../../portfolio";
 
 function Header() {
@@ -23,6 +25,8 @@ function Header() {
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
+  const viewEducation = educationInfo.display;
+  const viewBigProjects = bigProjects.display;
 
   return (
     <Headroom>
@@ -43,14 +47,25 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#Yetenekler">Yetenekler</a>
+            </li>
+          )}
+		  {viewBigProjects && (
+			  <li>
+				<a href="#Projeler">Projeler</a>
+			  </li>
+			)}
+			{viewEducation && (
+            <li>
+              <a href="#Eğitim">Eğitim</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#İş Tecrübeleri">İş Tecrübeleri</a>
             </li>
           )}
+		  
           {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
@@ -73,11 +88,11 @@ function Header() {
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#Özgeçmiş">Özgeçmiş</a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#İletişim">İletişim </a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
