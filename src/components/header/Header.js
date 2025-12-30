@@ -13,7 +13,7 @@ import {
   achievementSection,
   resumeSection,
   educationInfo,
-  bigProjects,
+  bigProjects
 } from "../../portfolio";
 
 function Header() {
@@ -50,8 +50,8 @@ function Header() {
               <a href="#Yetenekler">Yetenekler</a>
             </li>
           )}
-		  
-			{viewEducation && (
+
+          {viewEducation && (
             <li>
               <a href="#Eğitim">Eğitim</a>
             </li>
@@ -61,12 +61,12 @@ function Header() {
               <a href="#İş Tecrübeleri">İş Tecrübeleri</a>
             </li>
           )}
-		  {viewBigProjects && (
-			  <li>
-				<a href="#Projeler">Projeler</a>
-			  </li>
-			)}
-		  
+          {viewBigProjects && (
+            <li>
+              <a href="#Projeler">Projeler</a>
+            </li>
+          )}
+
           {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>

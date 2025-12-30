@@ -43,8 +43,8 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
-	  
-	  {socialMediaLinks.instagram ? (
+
+      {socialMediaLinks.instagram ? (
         <a
           href={socialMediaLinks.instagram}
           className="icon-button instagram"
@@ -55,25 +55,22 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
-	  
-	  {socialMediaLinks.letterboxd ? (
-		  <a
-			href={socialMediaLinks.letterboxd}
-			className="icon-button letterboxd"
-			target="_blank"
-			rel="noopener noreferrer"
-		  >
-			<img
-			  src={require("../../assets/images/letterboxd.png")}
-			  alt="letterboxd-icon"
-			  style={{ width: "45px", height: "45px", borderRadius: 	"100px" ,   }}
-			/>
-			<span></span>
-		  </a>
-		) : null}
 
-
-
+      {socialMediaLinks.letterboxd ? (
+        <a
+          href={socialMediaLinks.letterboxd}
+          className="icon-button letterboxd"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={require("../../assets/images/letterboxd.png")}
+            alt="letterboxd-icon"
+            style={{width: "45px", height: "45px", borderRadius: "100px"}}
+          />
+          <span></span>
+        </a>
+      ) : null}
 
       {socialMediaLinks.gitlab ? (
         <a
@@ -98,8 +95,6 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
-
-      
 
       {socialMediaLinks.twitter ? (
         <a

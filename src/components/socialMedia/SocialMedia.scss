@@ -2,9 +2,9 @@
 
 .social-media-div {
   font-size: 5em;
-  display: flex;              /* ← ikonları tek satıra dizer */
-  align-items: center;        /* ← dikey hizalama düzgün olsun */
-  gap: 3px;  
+  display: flex; /* ← ikonları tek satıra dizer */
+  align-items: center; /* ← dikey hizalama düzgün olsun */
+  gap: 3px;
 }
 
 .icon-button {
@@ -39,7 +39,6 @@
   margin-bottom: 10px;
   transition: 0.2s ease-in;
 }
-
 
 .icon-button i {
   color: $textColorDark;

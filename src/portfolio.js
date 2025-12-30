@@ -28,16 +28,15 @@ const greeting = {
   displayGreeting: true
 };
 
-
 // Social Media Links
 
 const socialMediaLinks = {
   github: "https://github.com/Rlueer",
   linkedin: "https://www.linkedin.com/in/emre-yavuz-4b849a18b",
   gmail: "emreyavuzz2001@gmail.com",
-  instagram:  "https://www.instagram.com/mr_yvz01/",
+  instagram: "https://www.instagram.com/mr_yvz01/",
   letterboxd: "http://boxd.it/ewOy9",
-  
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -47,71 +46,84 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Neler yapıyorum",
-	subTitle:
-	  "Donanım, sistem ve yazılım katmanlarını birlikte ele alarak; performanslı, ölçeklenebilir ve gerçek hayatta çalışan çözümler geliştiriyorum.",
-	skills: [
-    emoji("⚡ Mobil uygulama geliştirme: Flutter tabanlı uygulamalar, cihazlarla veri alışverişi ve gerçek zamanlı iletişim"),
-    emoji("⚡ Backend geliştirme: RESTful API’ler, veri tabanı entegrasyonu ve temel sunucu mimarileri"),
-    emoji("⚡ Sistem programlama: C/C++ ile çok iş parçacıklı yapılar, senkronizasyon ve performans odaklı tasarım"),
-    emoji("⚡ Gömülü sistemler: Mikrodenetleyici tabanlı geliştirme, düşük seviye programlama ve donanım entegrasyonu"),
-    emoji("⚡ FPGA tabanlı dijital tasarım: Verilog/VHDL ile modül geliştirme, doğrulama ve donanım–yazılım bütünleşmesi"),
-    emoji("⚡ Python ile veri işleme, görüntü işleme ve makine öğrenimi temelli projeler"),
-    emoji("⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama")
+  subTitle:
+    "Donanım, sistem ve yazılım katmanlarını birlikte ele alarak; performanslı, ölçeklenebilir ve gerçek hayatta çalışan çözümler geliştiriyorum.",
+  skills: [
+    emoji(
+      "⚡ Mobil uygulama geliştirme: Flutter tabanlı uygulamalar, cihazlarla veri alışverişi ve gerçek zamanlı iletişim"
+    ),
+    emoji(
+      "⚡ Backend geliştirme: RESTful API’ler, veri tabanı entegrasyonu ve temel sunucu mimarileri"
+    ),
+    emoji(
+      "⚡ Sistem programlama: C/C++ ile çok iş parçacıklı yapılar, senkronizasyon ve performans odaklı tasarım"
+    ),
+    emoji(
+      "⚡ Gömülü sistemler: Mikrodenetleyici tabanlı geliştirme, düşük seviye programlama ve donanım entegrasyonu"
+    ),
+    emoji(
+      "⚡ FPGA tabanlı dijital tasarım: Verilog/VHDL ile modül geliştirme, doğrulama ve donanım–yazılım bütünleşmesi"
+    ),
+    emoji(
+      "⚡ Python ile veri işleme, görüntü işleme ve makine öğrenimi temelli projeler"
+    ),
+    emoji(
+      "⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama"
+    )
   ],
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-  {
-    skillName: "C",
-    fontAwesomeClassname: "fas fa-copyright" // C sembolü için en yakın ikon
-  },
-  {
-    skillName: "C++",
-    fontAwesomeClassname: "fas fa-code"
-  },
-  {
-    skillName: "Python",
-    fontAwesomeClassname: "fab fa-python"
-  },
-  {
-    skillName: "Java",
-    fontAwesomeClassname: "fab fa-java"
-  },
-  {
-    skillName: "Dart / Flutter",
-    fontAwesomeClassname: "fas fa-mobile-alt"
-  },
-  {
-    skillName: "VHDL / Verilog",
-    fontAwesomeClassname: "fas fa-microchip"
-  },
-  {
-    skillName: "Linux",
-    fontAwesomeClassname: "fab fa-linux"
-  },
-  {
-    skillName: "Git",
-    fontAwesomeClassname: "fab fa-git-alt"
-  },
-  {
-    skillName: "Docker",
-    fontAwesomeClassname: "fab fa-docker"
-  },
-  {
-    skillName: "CI/CD",
-    fontAwesomeClassname: "fas fa-sync-alt"
-  },
-  {
-    skillName: "Node.js",
-    fontAwesomeClassname: "fab fa-node-js"
-  },
-  {
-    skillName: "PostgreSQL",
-    fontAwesomeClassname: "fas fa-database"
-  },
-
-],
+    {
+      skillName: "C",
+      fontAwesomeClassname: "fas fa-copyright" // C sembolü için en yakın ikon
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "Dart / Flutter",
+      fontAwesomeClassname: "fas fa-mobile-alt"
+    },
+    {
+      skillName: "VHDL / Verilog",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "CI/CD",
+      fontAwesomeClassname: "fas fa-sync-alt"
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node-js"
+    },
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "fas fa-database"
+    }
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -125,13 +137,12 @@ const educationInfo = {
       logo: require("./assets/images/gtulogo.png"),
       subHeader: "Bilgisayar Mühendisliği (İngilizce)",
       duration: "Eylül 2020 - Eylül 2025",
-      desc:
-		  "GTÜ’de İngilizce bilgisayar mühendisliği eğitimi alarak algoritmalar, yazılım geliştirme prensipleri ve donanım temelli derslerde güçlü bir temel oluşturdum.",
-		descBullets: [
-		  "C, C++, Java ve Python ile projeler,uygulamalar geliştirdim",
-		  "Mobil, web ve backend alanlarında proje deneyimleri edindim",
-		  "Yapay zeka ve bilgisayarla görme, gömülü sistemlerle ilgili çalışmalar yaptım"
-		]
+      desc: "GTÜ’de İngilizce bilgisayar mühendisliği eğitimi alarak algoritmalar, yazılım geliştirme prensipleri ve donanım temelli derslerde güçlü bir temel oluşturdum.",
+      descBullets: [
+        "C, C++, Java ve Python ile projeler,uygulamalar geliştirdim",
+        "Mobil, web ve backend alanlarında proje deneyimleri edindim",
+        "Yapay zeka ve bilgisayarla görme, gömülü sistemlerle ilgili çalışmalar yaptım"
+      ]
     },
     {
       schoolName: "Esenyurt Anadolu lisesi",
@@ -149,7 +160,7 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-	{
+    {
       Stack: "İngilizce",
       progressPercentage: "80%"
     },
@@ -178,9 +189,9 @@ const workExperiences = {
       desc: "VHDL kullanarak DO-254 uyumlu UART IP çekirdeği tasarladım, doğruladım ve MicroBlaze tabanlı gömülü sisteme entegre ettim.",
       descBullets: [
         "VHDL kullanarak UART tabanlı bir dijital modül tasarladım ve FSM yapısını ModelSim’de testbench ile doğruladım",
-		"Modülü Vivado’da geliştirdim; oversampling ve senkronizatör ekleyerek daha kararlı ve güvenilir çalışmasını sağladım.",
-		"Daha sonra tasarımı AXI4-Lite arayüzüyle paketleyip MicroBlaze işlemcili sisteme entegre ettim.",
-		"SDK’da C ile kontrol yazılımı yazıp loopback testlerini tamamlayarak sistemi FPGA üzerinde çalışır hale getirdim.",
+        "Modülü Vivado’da geliştirdim; oversampling ve senkronizatör ekleyerek daha kararlı ve güvenilir çalışmasını sağladım.",
+        "Daha sonra tasarımı AXI4-Lite arayüzüyle paketleyip MicroBlaze işlemcili sisteme entegre ettim.",
+        "SDK’da C ile kontrol yazılımı yazıp loopback testlerini tamamlayarak sistemi FPGA üzerinde çalışır hale getirdim."
       ]
     },
     {
@@ -196,11 +207,9 @@ const workExperiences = {
         "Kesinti, paket kaybı ve veri bütünlüğü problemleri için hata toleranslı özel algoritmalar geliştirdim.",
         "Uygulamayı Flutter Clean Architecture prensipleriyle modüler ve ölçeklenebilir hale getirdim."
       ]
-	  
     }
   ]
 };
-
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -217,80 +226,94 @@ const bigProjects = {
   subtitle: "Gerçekleştirdiğim teknik projelerden bazıları",
   projects: [
     {
-	  //image: require("./assets/images/saayaHealthLogo.webp"),
+      //image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
       projectDesc:
         "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı.",
       footerLink: [
-        { name: "Github", url: "https://github.com/EmreeYavuzz/FPGA-bitirme" },
-        { name: "Report", url: "https://github.com/EmreeYavuzz/FPGA-bitirme/blob/main/Emre_Yavuz_Grad.pdf" }
-      ],
-	  
+        {name: "Github", url: "https://github.com/EmreeYavuzz/FPGA-bitirme"},
+        {
+          name: "Report",
+          url: "https://github.com/EmreeYavuzz/FPGA-bitirme/blob/main/Emre_Yavuz_Grad.pdf"
+        }
+      ]
     },
-	{
+    {
       projectName: "LLM Tabanlı Siber Güvenlik Olgunluk Değerlendirme Aracı",
       projectDesc:
         "Kuruluşların siber güvenlik olgunluğunu ölçen yapay zekâ destekli bir değerlendirme aracı geliştirdim. Sistem, kullanıcıya dinamik sorular yönelterek cevapları analiz ediyor, sonraki adımları otomatik belirliyor ve sürecin sonunda görev listesi ile kapsamlı bir rapor üretiyor.",
       footerLink: [
-        { name: "Github", url: "https://github.com/EmreeYavuzz/CyberSecurity-LLM" },
-		{ name: "Youtube", url: "https://www.youtube.com/watch?v=Ou_M2Ii47uU" },
-		{ name: "Website", url: "https://emreeyavuzz.github.io/CyberSecurity-LLM/" },
+        {
+          name: "Github",
+          url: "https://github.com/EmreeYavuzz/CyberSecurity-LLM"
+        },
+        {name: "Youtube", url: "https://www.youtube.com/watch?v=Ou_M2Ii47uU"},
+        {
+          name: "Website",
+          url: "https://emreeyavuzz.github.io/CyberSecurity-LLM/"
+        }
       ]
     },
-	{
+    {
       projectName: "Öğrenci Yönetim Sistemi",
       projectDesc:
         "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim.",
       footerLink: [
-        { name: "GitHub", url: "https://github.com/EmreeYavuzz/iqb-poc" },
-		{ name: "Website", url: "https://bulut.enesakar.com.tr/" }
+        {name: "GitHub", url: "https://github.com/EmreeYavuzz/iqb-poc"},
+        {name: "Website", url: "https://bulut.enesakar.com.tr/"}
       ]
     },
-	{
+    {
       projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
       projectDesc:
         "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim. Sipariş iptallerinde hazırlama–fırın–teslimat aşamalarını geri alarak sistemi tamamen tutarlı halde çalıştırdım.",
-      footerLink: [
-      ]
+      footerLink: []
     },
-	
+
     {
       projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
       projectDesc:
         "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum; OS tarafında thread kontrol blokları, round-robin scheduler ve context switching mekanizmalarını tasarlayarak çoklu thread çalıştırmayı sağladım.",
       footerLink: [
-        { name: "Github", url: "https://github.com/EmreeYavuzz/os-proje" },
-        { name: "Report", url: "https://github.com/EmreeYavuzz/os-proje/blob/main/200104004003_os_project.pdf" }
+        {name: "Github", url: "https://github.com/EmreeYavuzz/os-proje"},
+        {
+          name: "Report",
+          url: "https://github.com/EmreeYavuzz/os-proje/blob/main/200104004003_os_project.pdf"
+        }
       ]
     },
-	
+
     {
       projectName: "Yapay Zekâ Destekli Özgeçmiş Platformu OzBuild",
       projectDesc:
         "Kullanıcıların gerçek zamanlı olarak özgeçmiş oluşturmasını sağlayan yapay zekâ destekli bir platform geliştirdim. Sistem, dinamik içerik üretimi ve anlık güncellemeyle kullanıcı deneyimini önemli ölçüde kolaylaştırıyor.",
       footerLink: [
-        { name: "GitHub", url: "https://github.com/EmreeYavuzz/OzBuild" },
-		{ name: "Youtube", url: "https://www.youtube.com/watch?v=0q4iHy1aO0A" },
-		{ name: "Website", url: "https://ozbuild-app.vercel.app/" },
+        {name: "GitHub", url: "https://github.com/EmreeYavuzz/OzBuild"},
+        {name: "Youtube", url: "https://www.youtube.com/watch?v=0q4iHy1aO0A"},
+        {name: "Website", url: "https://ozbuild-app.vercel.app/"}
       ]
     },
     {
-      projectName: "Pseudo Etiketli Anahtar Nokta Tespiti & Feature Extraction (ML)",
+      projectName:
+        "Pseudo Etiketli Anahtar Nokta Tespiti & Feature Extraction (ML)",
       projectDesc:
         "Görüntülerde anahtar noktaları otomatik tespit edip anlamlı özellikler çıkaran bir yapay zekâ modeli geliştirdim. Sistem, görüntü eşleştirme ve sahne analizinde kullanılmak üzere optimize edildi.",
       footerLink: [
-        { name: "Github", url: "https://github.com/EmreeYavuzz/Computer-Vision-Semester-Project" },
-		{ name: "Youtube", url: "https://www.youtube.com/watch?v=P2EKmou9_Rk" },
+        {
+          name: "Github",
+          url: "https://github.com/EmreeYavuzz/Computer-Vision-Semester-Project"
+        },
+        {name: "Youtube", url: "https://www.youtube.com/watch?v=P2EKmou9_Rk"}
       ]
     },
-	{
+    {
       projectName: "Gebze – Çok Oyunculu 3D Hayatta Kalma Oyunu",
       projectDesc:
         "Takım çalışmasıyla geliştirilen bir 3D hayatta kalma oyununda, dövüş mekanikleri, düşman yapay zekâsı (hareket, saldırı davranışları, karar ağacı) ve bölüm tasarımlarının oluşturulmasında görev aldım. Blueprint sistemiyle oyun içi etkileşimleri ve temel oynanış akışını geliştirdim.",
       footerLink: [
-        { name: "GitHub", url: "https://github.com/EmreeYavuzz/OlumMakineleri" },
-		{ name: "Youtube", url: "https://www.youtube.com/watch?v=n9C2cLsDyY4" },
-		{ name: "Website", url: "https://splendid-tulumba-47b4ea.netlify.app/" },
+        {name: "GitHub", url: "https://github.com/EmreeYavuzz/OlumMakineleri"},
+        {name: "Youtube", url: "https://www.youtube.com/watch?v=n9C2cLsDyY4"},
+        {name: "Website", url: "https://splendid-tulumba-47b4ea.netlify.app/"}
       ]
     },
     {
@@ -298,15 +321,16 @@ const bigProjects = {
       projectDesc:
         "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim. Uygulama, akıcı bir kullanıcı deneyimi sağlayacak şekilde gerçek zamanlı veri akışıyla çalışıyor.",
       footerLink: [
-        { name: "Drive", url: "https://drive.google.com/drive/folders/1eSJ5nVL5uqzpAtlkm8wDFMwFxvfsLCHy" },
-		{ name: "Youtube", url: "https://www.youtube.com/watch?v=eeqyQrKjxt0" },
+        {
+          name: "Drive",
+          url: "https://drive.google.com/drive/folders/1eSJ5nVL5uqzpAtlkm8wDFMwFxvfsLCHy"
+        },
+        {name: "Youtube", url: "https://www.youtube.com/watch?v=eeqyQrKjxt0"}
       ]
-    },
-
+    }
   ],
   display: true
 };
-
 
 // Achievement Section
 // Include certificates, talks etc
@@ -349,7 +373,7 @@ const achievementSection = {
           name: "View Google Assistant Action",
           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
-      ]	
+      ]
     },
 
     {
@@ -437,7 +461,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("İletişim"),
   subtitle:
-  "Proje, iş fırsatı veya herhangi bir konuda iletişime geçebilirsiniz.",
+    "Proje, iş fırsatı veya herhangi bir konuda iletişime geçebilirsiniz.",
   number: "",
   email_address: "emreyavuzz2001@gmail.com"
 };
