@@ -63,12 +63,13 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src={require("../../assets/images/letterboxd.png")}
-            alt="letterboxd-icon"
-            style={{width: "45px", height: "45px", borderRadius: "100px"}}
-          />
-          <span></span>
+          <span className="letterboxd-icon">
+            <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="70" cy="125" r="55" fill="#00E054"/>
+              <circle cx="250" cy="125" r="55" fill="#40BCF4"/>
+              <circle cx="430" cy="125" r="55" fill="#FF8000"/>
+            </svg>
+          </span>
         </a>
       ) : null}
 

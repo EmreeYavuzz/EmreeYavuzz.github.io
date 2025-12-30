@@ -8,9 +8,22 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import LanguageContext from "../../contexts/LanguageContext";
+import {getTranslation} from "../../i18n";
+
+// Resume dosyalarını import et
+import resumeTR from "./resume.pdf";
+import resumeEN from "./resume_eng.pdf";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+  const {language} = useContext(LanguageContext);
+  const t = getTranslation(language);
+  
+  // Dile göre resume dosyası ve indirme adı
+  const resumeFile = language === "en" ? resumeEN : resumeTR;
+  const resumeDownloadName = language === "en" ? "Emre_Yavuz_Resume.pdf" : "Emre_Yavuz_CV.pdf";
+  
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -24,7 +37,7 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title} <span className="wave-emoji">{emoji("")}</span>
+                {t.greeting.title} <span className="wave-emoji">{emoji("")}</span>
               </h1>
               <p
                 className={
@@ -33,19 +46,19 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+                {t.greeting.subTitle}
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="İletişim" href="#İletişim" />
+                <Button text={t.greeting.contactButton} href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
+                    href={resumeFile}
+                    download={resumeDownloadName}
                     className="download-link-button"
                   >
-                    <Button text="CV indir" />
+                    <Button text={t.greeting.resumeButton} />
                   </a>
                 )}
               </div>

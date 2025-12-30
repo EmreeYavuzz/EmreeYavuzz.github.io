@@ -5,3 +5,22 @@
   color: white;
   transition: "0.1s";
 }
+
+/* Language transition animation */
+.language-transition {
+  .content-wrapper {
+    opacity: 0.5;
+    transform: scale(0.99);
+  }
+}
+
+.content-wrapper {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+
+/* Smooth fade animation for text changes */
+h1, h2, h3, h4, h5, h6, p, span, a, li, button {
+  transition: opacity 0.2s ease-in-out;
+}

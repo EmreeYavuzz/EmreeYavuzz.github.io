@@ -4,18 +4,23 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import LanguageContext from "../../contexts/LanguageContext";
+import {getTranslation} from "../../i18n";
 
 export default function WorkExperience() {
   const {isDark} = useContext(StyleContext);
+  const {language} = useContext(LanguageContext);
+  const t = getTranslation(language);
+  
   if (workExperiences.display) {
     return (
       <div id="experience">
         <Fade bottom duration={1000} distance="20px">
-          <div className="experience-container" id="İş Tecrübeleri">
+          <div className="experience-container">
             <div>
-              <h1 className="experience-heading">İş Tecrübeleri</h1>
+              <h1 className="experience-heading">{t.workExperience.title}</h1>
               <div className="experience-cards-div">
-                {workExperiences.experience.map((card, i) => {
+                {t.workExperience.experiences.map((card, i) => {
                   return (
                     <ExperienceCard
                       key={i}
@@ -24,7 +29,7 @@ export default function WorkExperience() {
                         company: card.company,
                         desc: card.desc,
                         date: card.date,
-                        companylogo: card.companylogo,
+                        companylogo: workExperiences.experience[i]?.companylogo,
                         role: card.role,
                         descBullets: card.descBullets
                       }}

@@ -3,9 +3,14 @@ import "./SplashScreen.css";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import {greeting, splashScreen} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import LanguageContext from "../../contexts/LanguageContext";
+import {getTranslation} from "../../i18n";
 
 export default function SplashScreen() {
   const {isDark} = useContext(StyleContext);
+  const {language} = useContext(LanguageContext);
+  const t = getTranslation(language);
+  
   return (
     <div className={isDark ? "dark-mode splash-container" : "splash-container"}>
       <div className="splash-animation-container">
@@ -16,6 +21,7 @@ export default function SplashScreen() {
         <span className="splash-title">{greeting.username}</span>
         <span className="grey-color">/&gt;</span>
       </div>
+      <p className="splash-loading">{t.splash.loading}</p>
     </div>
   );
 }

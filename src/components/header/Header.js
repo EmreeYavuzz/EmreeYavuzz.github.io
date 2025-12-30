@@ -2,7 +2,10 @@ import React, {useContext} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+import LanguageSwitch from "../languageSwitch/LanguageSwitch";
 import StyleContext from "../../contexts/StyleContext";
+import LanguageContext from "../../contexts/LanguageContext";
+import {getTranslation} from "../../i18n";
 import {
   greeting,
   workExperiences,
@@ -18,6 +21,9 @@ import {
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const {language} = useContext(LanguageContext);
+  const t = getTranslation(language);
+  
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -47,53 +53,59 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#Yetenekler">Yetenekler</a>
+              <a href="#skills">{t.menu.skills}</a>
             </li>
           )}
 
           {viewEducation && (
             <li>
-              <a href="#Eğitim">Eğitim</a>
+              <a href="#education">{t.menu.education}</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#İş Tecrübeleri">İş Tecrübeleri</a>
+              <a href="#experience">{t.menu.experience}</a>
             </li>
           )}
           {viewBigProjects && (
             <li>
-              <a href="#Projeler">Projeler</a>
+              <a href="#projects">{t.menu.projects}</a>
             </li>
           )}
 
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource">{t.menu.openSource}</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">{t.menu.achievements}</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs">{t.menu.blogs}</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks">{t.menu.talks}</a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#Özgeçmiş">Özgeçmiş</a>
+              <a href="#resume">{t.menu.resume}</a>
             </li>
           )}
           <li>
-            <a href="#İletişim">İletişim </a>
+            <a href="#contact">{t.menu.contact}</a>
+          </li>
+          <li>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>
+              <LanguageSwitch />
+            </a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

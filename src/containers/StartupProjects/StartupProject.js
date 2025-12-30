@@ -3,6 +3,8 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import LanguageContext from "../../contexts/LanguageContext";
+import {getTranslation} from "../../i18n";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -14,14 +16,17 @@ export default function StartupProject() {
   }
 
   const {isDark} = useContext(StyleContext);
+  const {language} = useContext(LanguageContext);
+  const t = getTranslation(language);
+  
   if (!bigProjects.display) {
     return null;
   }
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="Projeler">
+      <div className="main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="skills-heading">{t.projects.title}</h1>
           <p
             className={
               isDark
@@ -29,11 +34,12 @@ export default function StartupProject() {
                 : "subTitle project-subtitle"
             }
           >
-            {bigProjects.subtitle}
+            {t.projects.subtitle}
           </p>
 
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
+              const translatedProject = t.projects.projectsList[i] || {};
               return (
                 <div
                   key={i}
@@ -47,7 +53,7 @@ export default function StartupProject() {
                     <div className="project-image">
                       <img
                         src={project.image}
-                        alt={project.projectName}
+                        alt={translatedProject.projectName || project.projectName}
                         className="card-image"
                       ></img>
                     </div>
@@ -56,14 +62,14 @@ export default function StartupProject() {
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
                     >
-                      {project.projectName}
+                      {translatedProject.projectName || project.projectName}
                     </h5>
                     <p
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
                     >
-                      {project.projectDesc}
+                      {translatedProject.projectDesc || project.projectDesc}
                     </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">

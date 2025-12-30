@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import "./loading.scss";
+import LanguageContext from "../../contexts/LanguageContext";
+import {getTranslation} from "../../i18n";
 
 export default function Loading() {
+  const languageContext = useContext(LanguageContext);
+  const language = languageContext?.language || "tr";
+  const t = getTranslation(language);
+  
   return (
     <div className="centerContent">
       <div className="sk-circle">
@@ -18,6 +24,7 @@ export default function Loading() {
         <div className="sk-circle11 sk-child"></div>
         <div className="sk-circle12 sk-child"></div>
       </div>
+      <p className="loading-text">{t.splash.loading}</p>
     </div>
   );
 }

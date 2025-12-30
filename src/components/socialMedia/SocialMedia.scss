@@ -12,32 +12,32 @@
 }
 
 .icon-button.letterboxd {
-  background-color: #131722; /* karanlık gri (diğerleriyle uyumlu) */
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  color: $textColorDark;
-  border-radius: 2.6rem;
-  cursor: pointer;
   display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
   margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 2.6rem;
   margin-bottom: 10px;
+  cursor: pointer;
   transition: 0.2s ease-in;
+  text-decoration: none;
+
+  .letterboxd-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: #14181c;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+
+    svg {
+      width: 1.4rem;
+      height: auto;
+    }
+  }
+
+  &:hover .letterboxd-icon {
+    background-color: $textColor;
+  }
 }
 
 .icon-button i {

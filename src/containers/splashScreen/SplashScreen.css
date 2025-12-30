@@ -21,3 +21,19 @@
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
 }
+
+.splash-loading {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #868e96;
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
