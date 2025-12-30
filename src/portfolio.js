@@ -21,13 +21,13 @@ const illustration = {
 
 const greeting = {
   username: "Emre Yavuz",
-  title: "Merhaba, Ben Emre Yavuz",
-  subTitle: 
-  "Mobil, web ve backend tarafında projeler geliştirdim; yapay zeka, görüntü işleme ve gerçek zamanlı sistemler üzerine çalışmalar yaptım. Son dönemde ağırlıklı olarak gömülü sistemler, C programlama ve mikrodenetleyici tabanlı düşük seviye yazılımla ilgileniyorum.",
-	
-  resumeLink: "resume.pdf", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  title: "Merhaba, ben Emre 👋",
+  subTitle:
+    "Mobil uygulamalardan backend servislerine, gerçek zamanlı sistemlerden donanımla konuşan yazılımlara kadar farklı katmanlarda projeler geliştiriyorum. Sistemlerin hem görünen tarafıyla hem de perde arkasındaki detaylarıyla ilgilenmeyi seviyorum.",
+  resumeLink: "resume.pdf",
+  displayGreeting: true
 };
+
 
 // Social Media Links
 
@@ -48,15 +48,16 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "Neler yapıyorum",
 	subTitle:
-	  "Donanım ve yazılımı birlikte kullanarak farklı alanlarda projeler geliştiren, çok yönlü bir mühendislik yaklaşımına sahibim.",
+	  "Donanım, sistem ve yazılım katmanlarını birlikte ele alarak; performanslı, ölçeklenebilir ve gerçek hayatta çalışan çözümler geliştiriyorum.",
 	skills: [
-	  emoji("⚡ FPGA tabanlı dijital tasarım, VHDL/Verilog ile modelleme ve doğrulama"),
-	  emoji("⚡ Gömülü sistem geliştirme: düşük seviye programlama, gerçek zamanlı çalışma mantığı ve donanım entegrasyonu"),
-	  emoji("⚡ Mobil uygulama geliştirme ve cihazlarla veri alışverişi yapılan uygulama mimarileri"),
-	  emoji("⚡ Sunucu tarafı uygulamalar geliştirme ve temel backend mimarileri oluşturma"),
-	  emoji("⚡ Python ile veri işleme, temel görüntü işleme ve makine öğrenimi projeleri"),
-	  emoji("⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan proje çözümleri üretme")
-	],
+    emoji("⚡ Mobil uygulama geliştirme: Flutter tabanlı uygulamalar, cihazlarla veri alışverişi ve gerçek zamanlı iletişim"),
+    emoji("⚡ Backend geliştirme: RESTful API’ler, veri tabanı entegrasyonu ve temel sunucu mimarileri"),
+    emoji("⚡ Sistem programlama: C/C++ ile çok iş parçacıklı yapılar, senkronizasyon ve performans odaklı tasarım"),
+    emoji("⚡ Gömülü sistemler: Mikrodenetleyici tabanlı geliştirme, düşük seviye programlama ve donanım entegrasyonu"),
+    emoji("⚡ FPGA tabanlı dijital tasarım: Verilog/VHDL ile modül geliştirme, doğrulama ve donanım–yazılım bütünleşmesi"),
+    emoji("⚡ Python ile veri işleme, görüntü işleme ve makine öğrenimi temelli projeler"),
+    emoji("⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama")
+  ],
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
