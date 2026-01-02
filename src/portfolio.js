@@ -228,7 +228,7 @@ const bigProjects = {
 
     {
       projectName: "LLM Tabanlı Siber Güvenlik Olgunluk Değerlendirme Aracı",
-      category: "ai",
+      category: ["ai", "fullstack"],
       projectDesc:
         "Kuruluşların siber güvenlik olgunluğunu ölçen yapay zekâ destekli bir değerlendirme aracı geliştirdim. Sistem, kullanıcıya dinamik sorular yönelterek cevapları analiz ediyor, sonraki adımları otomatik belirliyor ve sürecin sonunda görev listesi ile kapsamlı bir rapor üretiyor.",
       footerLink: [
@@ -245,7 +245,7 @@ const bigProjects = {
     },
     {
       projectName: "Yapay Zekâ Destekli Özgeçmiş Platformu OzBuild",
-      category: "fullstack",
+      category: ["ai", "fullstack"],
       projectDesc:
         "Kullanıcıların gerçek zamanlı olarak özgeçmiş oluşturmasını sağlayan yapay zekâ destekli bir platform geliştirdim. Sistem, dinamik içerik üretimi ve anlık güncellemeyle kullanıcı deneyimini önemli ölçüde kolaylaştırıyor.",
       footerLink: [
@@ -257,7 +257,7 @@ const bigProjects = {
     {
       projectName:
         "Pseudo Etiketli Anahtar Nokta Tespiti & Feature Extraction (ML)",
-      category: "ai",
+      category: ["ai"],
       projectDesc:
         "Görüntülerde anahtar noktaları otomatik tespit edip anlamlı özellikler çıkaran bir yapay zekâ modeli geliştirdim. Sistem, görüntü eşleştirme ve sahne analizinde kullanılmak üzere optimize edildi.",
       footerLink: [
@@ -270,7 +270,7 @@ const bigProjects = {
     },
     {
       projectName: "Gebze – Çok Oyunculu 3D Hayatta Kalma Oyunu",
-      category: "game",
+      category: ["game", "ai"],
       projectDesc:
         "Takım çalışmasıyla geliştirilen bir 3D hayatta kalma oyununda, dövüş mekanikleri, düşman yapay zekâsı (hareket, saldırı davranışları, karar ağacı) ve bölüm tasarımlarının oluşturulmasında görev aldım. Blueprint sistemiyle oyun içi etkileşimleri ve temel oynanış akışını geliştirdim.",
       footerLink: [
@@ -281,7 +281,7 @@ const bigProjects = {
     },
     {
       projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
-      category: "mobile",
+      category: ["mobile"],
       projectDesc:
         "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim. Uygulama, akıcı bir kullanıcı deneyimi sağlayacak şekilde gerçek zamanlı veri akışıyla çalışıyor.",
       footerLink: [
@@ -295,7 +295,7 @@ const bigProjects = {
     {
       //image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
-      category: "hardware",
+      category: ["hardware", "systems"],
       projectDesc:
         "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı.",
       footerLink: [
@@ -309,7 +309,7 @@ const bigProjects = {
     
     {
       projectName: "Öğrenci Yönetim Sistemi",
-      category: "fullstack",
+      category: ["fullstack"],
       projectDesc:
         "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim.",
       footerLink: [
@@ -320,7 +320,7 @@ const bigProjects = {
 
     {
       projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
-      category: "systems",
+      category: ["systems"],
       projectDesc:
         "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum; OS tarafında thread kontrol blokları, round-robin scheduler ve context switching mekanizmalarını tasarlayarak çoklu thread çalıştırmayı sağladım.",
       footerLink: [
@@ -333,7 +333,7 @@ const bigProjects = {
     },
     {
       projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
-      category: "systems",
+      category: ["systems"],
       projectDesc:
         "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim. Sipariş iptallerinde hazırlama–fırın–teslimat aşamalarını geri alarak sistemi tamamen tutarlı halde çalıştırdım.",
       footerLink: []

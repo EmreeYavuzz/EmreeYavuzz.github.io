@@ -40,14 +40,15 @@ export default function StartupProject() {
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
               const translatedProject = t.projects.projectsList[i] || {};
-              const categoryClass = project.category ? `category-${project.category}` : '';
+              const categories = Array.isArray(project.category) ? project.category : [project.category];
+              const categoryClasses = categories.map(cat => `category-${cat}`).join(' ');
               return (
                 <div
                   key={i}
                   className={
                     isDark
-                      ? `dark-mode project-card project-card-dark ${categoryClass}`
-                      : `project-card project-card-light ${categoryClass}`
+                      ? `dark-mode project-card project-card-dark ${categoryClasses}`
+                      : `project-card project-card-light ${categoryClasses}`
                   }
                 >
                   {project.image ? (
@@ -60,10 +61,14 @@ export default function StartupProject() {
                     </div>
                   ) : null}
                   <div className="project-detail">
-                    {project.category && (
-                      <span className={`category-badge ${project.category}`}>
-                        {project.category}
-                      </span>
+                    {categories.length > 0 && categories[0] && (
+                      <div className="category-badges">
+                        {categories.map((cat, idx) => (
+                          <span key={idx} className={`category-badge ${cat}`}>
+                            {cat}
+                          </span>
+                        ))}
+                      </div>
                     )}
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
