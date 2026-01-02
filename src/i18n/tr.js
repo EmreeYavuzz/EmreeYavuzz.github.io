@@ -137,14 +137,14 @@ export const tr = {
           "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim."
       },
       {
-        projectName: "Öğrenci Yönetim Sistemi",
-        projectDesc:
-          "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim."
-      },
-      {
         projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
         projectDesc:
           "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı."
+      },
+      {
+        projectName: "Öğrenci Yönetim Sistemi",
+        projectDesc:
+          "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim."
       },
       {
         projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",

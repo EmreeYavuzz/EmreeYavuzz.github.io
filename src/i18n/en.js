@@ -19,7 +19,7 @@ export const en = {
   greeting: {
     title: "Hi, I'm Emre 👋",
     subTitle:
-      "I develop projects across various layers — from mobile applications to backend services, from real-time systems to hardware-interfacing software. I enjoy working on both the visible side of systems and the details behind the scenes.",
+      "I develop projects across various layers from mobile applications to backend services, from real-time systems to hardware-interfacing software. I enjoy working on both the visible side of systems and the details behind the scenes.",
     resumeButton: "Download Resume",
     contactButton: "Contact Me"
   },
