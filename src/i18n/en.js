@@ -112,29 +112,9 @@ export const en = {
     subtitle: "Some of the technical projects I've completed",
     projectsList: [
       {
-        projectName: "Smart Environmental Monitoring and Control System (Verilog, C)",
-        projectDesc:
-          "Designed a monitoring system that processes multiple sensor data in real-time between FPGA and MCU through bidirectional communication. Implemented visual and auditory warning mechanisms for real-time status tracking."
-      },
-      {
         projectName: "LLM-Based Cybersecurity Maturity Assessment Tool",
         projectDesc:
           "Developed an AI-powered assessment tool that evaluates organizational cybersecurity maturity. The system dynamically generates questions, analyzes responses, determines next steps automatically, and produces a comprehensive report with actionable tasks."
-      },
-      {
-        projectName: "Student Management System",
-        projectDesc:
-          "Developed a full-stack student management system for handling student, course, and exam data; featuring multi-criteria search, exam management, GPA calculation, and course history tracking."
-      },
-      {
-        projectName: "Pide Shop Simulation (C, Multi-Threading)",
-        projectDesc:
-          "Built a restaurant simulation managing real-time order flow. Implemented mutex and condition variables to coordinate shared resources (oven, delivery) in a multi-threaded environment with cooks and couriers."
-      },
-      {
-        projectName: "Operating System and CPU Simulator (Assembly, Python)",
-        projectDesc:
-          "Developed a CPU simulator based on a custom instruction set and a basic operating system kernel. Implemented memory management, user/kernel mode separation, and syscall mechanisms."
       },
       {
         projectName: "AI-Powered Resume Platform OzBuild",
@@ -155,6 +135,26 @@ export const en = {
         projectName: "OPIUM – Social Media / Event Application",
         projectDesc:
           "Developed a cross-platform social media application where users can create and join events, share posts, and chat in real-time."
+      },
+      {
+        projectName: "Smart Environmental Monitoring and Control System (Verilog, C)",
+        projectDesc:
+          "Designed a monitoring system that processes multiple sensor data in real-time between FPGA and MCU through bidirectional communication. Implemented visual and auditory warning mechanisms for real-time status tracking."
+      },
+      {
+        projectName: "Student Management System",
+        projectDesc:
+          "Developed a full-stack student management system for handling student, course, and exam data; featuring multi-criteria search, exam management, GPA calculation, and course history tracking."
+      },
+      {
+        projectName: "Operating System and CPU Simulator (Assembly, Python)",
+        projectDesc:
+          "Developed a CPU simulator based on a custom instruction set and a basic operating system kernel. Implemented memory management, user/kernel mode separation, and syscall mechanisms."
+      },
+      {
+        projectName: "Pide Shop Simulation (C, Multi-Threading)",
+        projectDesc:
+          "Built a restaurant simulation managing real-time order flow. Implemented mutex and condition variables to coordinate shared resources (oven, delivery) in a multi-threaded environment with cooks and couriers."
       }
     ]
   },
