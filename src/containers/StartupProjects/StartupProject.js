@@ -40,13 +40,14 @@ export default function StartupProject() {
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
               const translatedProject = t.projects.projectsList[i] || {};
+              const categoryClass = project.category ? `category-${project.category}` : '';
               return (
                 <div
                   key={i}
                   className={
                     isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
+                      ? `dark-mode project-card project-card-dark ${categoryClass}`
+                      : `project-card project-card-light ${categoryClass}`
                   }
                 >
                   {project.image ? (
@@ -59,6 +60,11 @@ export default function StartupProject() {
                     </div>
                   ) : null}
                   <div className="project-detail">
+                    {project.category && (
+                      <span className={`category-badge ${project.category}`}>
+                        {project.category}
+                      </span>
+                    )}
                     <h5
                       className={isDark ? "dark-mode card-title" : "card-title"}
                     >

@@ -225,21 +225,10 @@ const bigProjects = {
   title: "Projeler",
   subtitle: "Gerçekleştirdiğim teknik projelerden bazıları",
   projects: [
-    {
-      //image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
-      projectDesc:
-        "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı.",
-      footerLink: [
-        {name: "Github", url: "https://github.com/EmreeYavuzz/FPGA-bitirme"},
-        {
-          name: "Report",
-          url: "https://github.com/EmreeYavuzz/FPGA-bitirme/blob/main/Emre_Yavuz_Grad.pdf"
-        }
-      ]
-    },
+
     {
       projectName: "LLM Tabanlı Siber Güvenlik Olgunluk Değerlendirme Aracı",
+      category: "ai",
       projectDesc:
         "Kuruluşların siber güvenlik olgunluğunu ölçen yapay zekâ destekli bir değerlendirme aracı geliştirdim. Sistem, kullanıcıya dinamik sorular yönelterek cevapları analiz ediyor, sonraki adımları otomatik belirliyor ve sürecin sonunda görev listesi ile kapsamlı bir rapor üretiyor.",
       footerLink: [
@@ -255,36 +244,8 @@ const bigProjects = {
       ]
     },
     {
-      projectName: "Öğrenci Yönetim Sistemi",
-      projectDesc:
-        "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim.",
-      footerLink: [
-        {name: "GitHub", url: "https://github.com/EmreeYavuzz/iqb-poc"},
-        {name: "Website", url: "https://bulut.enesakar.com.tr/"}
-      ]
-    },
-    {
-      projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
-      projectDesc:
-        "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim. Sipariş iptallerinde hazırlama–fırın–teslimat aşamalarını geri alarak sistemi tamamen tutarlı halde çalıştırdım.",
-      footerLink: []
-    },
-
-    {
-      projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
-      projectDesc:
-        "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum; OS tarafında thread kontrol blokları, round-robin scheduler ve context switching mekanizmalarını tasarlayarak çoklu thread çalıştırmayı sağladım.",
-      footerLink: [
-        {name: "Github", url: "https://github.com/EmreeYavuzz/os-proje"},
-        {
-          name: "Report",
-          url: "https://github.com/EmreeYavuzz/os-proje/blob/main/200104004003_os_project.pdf"
-        }
-      ]
-    },
-
-    {
       projectName: "Yapay Zekâ Destekli Özgeçmiş Platformu OzBuild",
+      category: "fullstack",
       projectDesc:
         "Kullanıcıların gerçek zamanlı olarak özgeçmiş oluşturmasını sağlayan yapay zekâ destekli bir platform geliştirdim. Sistem, dinamik içerik üretimi ve anlık güncellemeyle kullanıcı deneyimini önemli ölçüde kolaylaştırıyor.",
       footerLink: [
@@ -296,6 +257,7 @@ const bigProjects = {
     {
       projectName:
         "Pseudo Etiketli Anahtar Nokta Tespiti & Feature Extraction (ML)",
+      category: "ai",
       projectDesc:
         "Görüntülerde anahtar noktaları otomatik tespit edip anlamlı özellikler çıkaran bir yapay zekâ modeli geliştirdim. Sistem, görüntü eşleştirme ve sahne analizinde kullanılmak üzere optimize edildi.",
       footerLink: [
@@ -308,6 +270,7 @@ const bigProjects = {
     },
     {
       projectName: "Gebze – Çok Oyunculu 3D Hayatta Kalma Oyunu",
+      category: "game",
       projectDesc:
         "Takım çalışmasıyla geliştirilen bir 3D hayatta kalma oyununda, dövüş mekanikleri, düşman yapay zekâsı (hareket, saldırı davranışları, karar ağacı) ve bölüm tasarımlarının oluşturulmasında görev aldım. Blueprint sistemiyle oyun içi etkileşimleri ve temel oynanış akışını geliştirdim.",
       footerLink: [
@@ -318,6 +281,7 @@ const bigProjects = {
     },
     {
       projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
+      category: "mobile",
       projectDesc:
         "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim. Uygulama, akıcı bir kullanıcı deneyimi sağlayacak şekilde gerçek zamanlı veri akışıyla çalışıyor.",
       footerLink: [
@@ -327,7 +291,55 @@ const bigProjects = {
         },
         {name: "Youtube", url: "https://www.youtube.com/watch?v=eeqyQrKjxt0"}
       ]
-    }
+    },
+    {
+      //image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
+      category: "hardware",
+      projectDesc:
+        "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı.",
+      footerLink: [
+        {name: "Github", url: "https://github.com/EmreeYavuzz/FPGA-bitirme"},
+        {
+          name: "Report",
+          url: "https://github.com/EmreeYavuzz/FPGA-bitirme/blob/main/Emre_Yavuz_Grad.pdf"
+        }
+      ]
+    },
+    
+    {
+      projectName: "Öğrenci Yönetim Sistemi",
+      category: "fullstack",
+      projectDesc:
+        "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim.",
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/EmreeYavuzz/iqb-poc"},
+        {name: "Website", url: "https://bulut.enesakar.com.tr/"}
+      ]
+    },
+
+    {
+      projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
+      category: "systems",
+      projectDesc:
+        "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum; OS tarafında thread kontrol blokları, round-robin scheduler ve context switching mekanizmalarını tasarlayarak çoklu thread çalıştırmayı sağladım.",
+      footerLink: [
+        {name: "Github", url: "https://github.com/EmreeYavuzz/os-proje"},
+        {
+          name: "Report",
+          url: "https://github.com/EmreeYavuzz/os-proje/blob/main/200104004003_os_project.pdf"
+        }
+      ]
+    },
+    {
+      projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
+      category: "systems",
+      projectDesc:
+        "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim. Sipariş iptallerinde hazırlama–fırın–teslimat aşamalarını geri alarak sistemi tamamen tutarlı halde çalıştırdım.",
+      footerLink: []
+    },
+    
+
   ],
   display: true
 };

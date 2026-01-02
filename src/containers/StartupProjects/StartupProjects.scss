@@ -25,7 +25,45 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: height 0.3s ease;
+}
+
+.project-card.category-ai::before {
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+}
+
+.project-card.category-fullstack::before {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.project-card.category-hardware::before {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.project-card.category-systems::before {
+  background: linear-gradient(90deg, #fa709a 0%, #fee140 100%);
+}
+
+.project-card.category-mobile::before {
+  background: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+}
+
+.project-card.category-game::before {
+  background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%);
+}
+
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   -webkit-transition: all 0.3s ease;
@@ -45,9 +83,16 @@
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  transform: translateY(-5px);
 }
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  transform: translateY(-5px);
+}
+
+.project-card-light:hover::before,
+.project-card-dark:hover::before {
+  height: 6px;
 }
 .project-image {
   position: relative;
@@ -101,4 +146,42 @@
     font-size: 16px;
     text-align: center;
   }
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.category-badge.ai {
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+}
+
+.category-badge.fullstack {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.category-badge.hardware {
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.category-badge.systems {
+  background: linear-gradient(90deg, #fa709a 0%, #fee140 100%);
+}
+
+.category-badge.mobile {
+  background: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+}
+
+.category-badge.game {
+  background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
 }
