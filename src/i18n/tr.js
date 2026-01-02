@@ -112,29 +112,9 @@ export const tr = {
     subtitle: "Gerçekleştirdiğim teknik projelerden bazıları",
     projectsList: [
       {
-        projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
-        projectDesc:
-          "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı."
-      },
-      {
         projectName: "LLM Tabanlı Siber Güvenlik Olgunluk Değerlendirme Aracı",
         projectDesc:
           "Kuruluşların siber güvenlik olgunluğunu ölçen yapay zekâ destekli bir değerlendirme aracı geliştirdim. Sistem, kullanıcıya dinamik sorular yönelterek cevapları analiz ediyor, sonraki adımları otomatik belirliyor ve sürecin sonunda görev listesi ile kapsamlı bir rapor üretiyor."
-      },
-      {
-        projectName: "Öğrenci Yönetim Sistemi",
-        projectDesc:
-          "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim."
-      },
-      {
-        projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
-        projectDesc:
-          "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim."
-      },
-      {
-        projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
-        projectDesc:
-          "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum."
       },
       {
         projectName: "Yapay Zekâ Destekli Özgeçmiş Platformu OzBuild",
@@ -155,6 +135,26 @@ export const tr = {
         projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
         projectDesc:
           "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim."
+      },
+      {
+        projectName: "Öğrenci Yönetim Sistemi",
+        projectDesc:
+          "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim."
+      },
+      {
+        projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
+        projectDesc:
+          "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı."
+      },
+      {
+        projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
+        projectDesc:
+          "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum."
+      },
+      {
+        projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
+        projectDesc:
+          "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim."
       }
     ]
   },
