@@ -87,7 +87,7 @@ export const en = {
     workItems: [
       {
         role: "Mobile & Backend Developer",
-        company: "Synctaxi",
+        company: "SyncTaxi",
         date: "2025 – Present",
         desc: "Contributed to a real-time taxi queue platform across mobile app, backend APIs, and operator-facing workflows.",
         descBullets: [
@@ -104,24 +104,23 @@ export const en = {
         role: "Mobile App / Communication Intern",
         company: "ORTEM Electronics",
         date: "January 2025 – February 2025",
-        desc: "Developed a Flutter-based vehicle status simulation app that processed UART/CAN communication data in real time.",
+        desc: "Developed a Flutter-based communication application on Android capable of reading CAN data over USB-Serial.",
         descBullets: [
-          "Implemented real-time connection and auto-reconnect flows on Android using usb_serial.",
-          "Developed CAN frame parsing, byte-level processing, buffering, and packet integrity validation logic.",
-          "Synchronized dashboard components (speed, odometer, gear, lights) with incoming CAN messages.",
-          "Built fault-tolerant handling for interruption, packet-loss, and data-consistency scenarios.",
-          "Structured the app with Flutter Clean Architecture for modularity, testability, and long-term maintainability."
+          "Tested multiple libraries for baud-rate handling and endpoint configuration to ensure hardware-software compatibility.",
+          "Designed CAN frame parsing, byte-level processing, buffering, and packet integrity validation algorithms.",
+          "Separated the app into Clean Architecture layers to build a testable and maintainable structure.",
+          "Used Docklight and CAN Debugger for troubleshooting and achieved more reliable real-time CAN flow with reduced data loss."
         ]
       },
       {
         role: "FPGA Design Intern",
         company: "TÜBİTAK BİLGEM",
         date: "July 2025 – August 2025",
-        desc: "Contributed to digital design development, verification, and integration tasks in an embedded system workflow.",
+        desc: "Designed scalable digital architectures using VHDL and Vivado; developed state machines and automated testbenches.",
         descBullets: [
-          "Worked on VHDL/Vivado module validation workflows with structured testbench scenarios.",
-          "Supported AXI4-Lite integration and embedded-system connection steps with the engineering team.",
-          "Contributed to SDK-side control flow and loopback test validation for integrated module behavior."
+          "Built a UART module with oversampling and metastability protection for reliable real-time data transmission.",
+          "Integrated the module into a MicroBlaze-based embedded system over AXI4-Lite, completing hardware-software integration.",
+          "Optimized end-to-end data processing pipelines in embedded environments to improve fault tolerance and sustainability."
         ]
       }
     ]

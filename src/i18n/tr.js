@@ -87,7 +87,7 @@ export const tr = {
     workItems: [
       {
         role: "Mobil & Backend Geliştirici",
-        company: "Synctaxi",
+        company: "SyncTaxi",
         date: "2025 – Devam Ediyor",
         desc: "Gerçek zamanlı taksi sıra yönetim platformunda mobil uygulama, backend API ve operasyon paneli taraflarında geliştirme yaptım.",
         descBullets: [
@@ -104,24 +104,23 @@ export const tr = {
         role: "Mobil Uygulama / Haberleşme Stajyeri",
         company: "ORTEM Electronics",
         date: "Ocak 2025 – Şubat 2025",
-        desc: "Flutter tabanlı mobil uygulamada UART/CAN veri akışını işleyen araç durumu simülasyon sistemi geliştirdim.",
+        desc: "Android tarafında USB-Serial portu üzerinden CAN verilerini okuyabilen Flutter tabanlı bir haberleşme uygulaması geliştirdim.",
         descBullets: [
-          "usb_serial ile Android tarafında gerçek zamanlı bağlantı ve otomatik yeniden bağlanma akışlarını yönettim.",
-          "CAN frame ayrıştırma, byte-level parsing, veri tamponlama ve paket bütünlüğü kontrol algoritmaları geliştirdim.",
-          "Gösterge paneli (hız, odometre, vites, far) bileşenlerini CAN mesajlarıyla eş zamanlı senkronize ettim.",
-          "Paket kaybı ve kesinti durumlarında sistemin kararlı kalması için hata toleranslı veri işleme yapısı kurdum.",
-          "Uygulamayı Clean Architecture prensipleriyle modüler, test edilebilir ve sürdürülebilir hale getirdim."
+          "Baud rate yönetimi ve endpoint yapılandırması için farklı kütüphaneleri test ederek donanım-yazılım uyumunu sağladım.",
+          "CAN frame ayrıştırma, byte-level parsing, veri tamponlama ve paket bütünlüğü kontrol algoritmaları tasarladım.",
+          "Uygulamayı Clean Architecture prensiplerine göre katmanlara ayırarak test edilebilir ve sürdürülebilir bir yapı oluşturdum.",
+          "Docklight, CAN Debugger araçlarıyla debugging yaparak veri kayıplarını azaltan, güvenilir gerçek zamanlı CAN akışı sağladım."
         ]
       },
       {
         role: "FPGA Tasarım Stajyeri",
         company: "TÜBİTAK BİLGEM",
         date: "Temmuz 2025 – Ağustos 2025",
-        desc: "Dijital tasarım geliştirme, doğrulama ve entegrasyon süreçlerinde ekip içinde aktif görev aldım.",
+        desc: "VHDL ve Vivado kullanarak ölçeklenebilir dijital mimariler tasarladım; durum makineleri ve otomatik testbench'ler geliştirdim.",
         descBullets: [
-          "VHDL ve Vivado kullanarak testbench destekli modül doğrulama süreçlerinde çalıştım.",
-          "AXI4-Lite tabanlı entegrasyon ve gömülü sistem bağlantı adımlarında geliştirme ekibine destek oldum.",
-          "SDK tarafındaki kontrol akışları ve loopback testleriyle modül davranışının doğrulanmasına katkı sağladım."
+          "Oversampling ve metastabilite koruması uygulayarak güvenilir gerçek zamanlı veri aktarımı sağlayan UART modülü oluşturdum.",
+          "Modülü AXI4-Lite üzerinden MicroBlaze tabanlı gömülü sisteme entegre ederek donanım-yazılım bütünleşmesini tamamladım.",
+          "Gömülü ortamlarda hata toleransını artırmak ve sürdürülebilirliği geliştirmek için uçtan uca veri işleme hatlarını optimize ettim."
         ]
       }
     ]
