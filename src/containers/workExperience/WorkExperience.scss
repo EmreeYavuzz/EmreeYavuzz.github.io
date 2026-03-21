@@ -4,6 +4,20 @@
   gap: 2rem 1.5rem;
 }
 
+.experience-section {
+  margin-bottom: 2.5rem;
+}
+
+.experience-section:last-child {
+  margin-bottom: 0;
+}
+
+.experience-section-heading {
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0 0 1.2rem 0;
+}
+
 .experience-heading {
   font-size: 56px;
   font-weight: 400;
@@ -33,6 +47,11 @@
 @media (max-width: 768px) {
   .experience-heading {
     font-size: 30px;
+    text-align: center;
+  }
+
+  .experience-section-heading {
+    font-size: 24px;
     text-align: center;
   }
 }

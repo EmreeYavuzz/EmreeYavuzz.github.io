@@ -180,33 +180,18 @@ const techStack = {
 
 const workExperiences = {
   display: true,
-  experience: [
+  work: [
     {
-      role: "Mobil & Backend Geliştirici",
-      company: "Synctaxi",
-      companylogo: require("./assets/images/ortemlogo.png"),
-      date: "2025 – Devam Ediyor",
-      desc: "Gerçek zamanlı taksi sıra yönetim platformunda mobil uygulama, backend API ve operasyon paneli taraflarında geliştirme yaptım.",
-      descBullets: [
-        "Node.js/Express ve MongoDB ile sürücü sırası, rezervasyon ve rol bazlı erişim için API servisleri geliştirdim.",
-        "Yük altında tutarlılık için kuyruk işlemlerinde yarış durumlarını azaltan kilit/atomik işlem yaklaşımını uyguladım.",
-        "Flutter mobil istemcide gerçek zamanlı sıra takibi ve kullanıcı akışlarını backend ile uyumlu hale getirdim.",
-        "CI/CD hattında build, test, container publish ve güvenli deployment adımlarına katkı sağladım."
-      ]
+      companylogo: require("./assets/images/synctaxi-logo.svg"),
+      bannerColor: "#f5c400"
+    }
+  ],
+  internships: [
+    {
+      companylogo: require("./assets/images/ortemlogo.png")
     },
     {
-      role: "Mobil Uygulama / Haberleşme Stajyeri",
-      company: "ORTEM Electronics",
-      companylogo: require("./assets/images/ortemlogo.png"),
-      date: "Ocak 2025 – Şubat 2025",
-      desc: "Flutter tabanlı mobil uygulama üzerinden seri haberleşme (UART/CAN) verilerini işleyen bir araç durum simülasyon sistemi geliştirdim.",
-      descBullets: [
-        "usb_serial kütüphanesi ile Android cihazlarda gerçek zamanlı bağlantı ve yeniden bağlanma mekanizmaları geliştirdim.",
-        "CAN frame parsing, veri tamponlama ve paket bütünlüğü kontrol algoritmaları tasarladım.",
-        "Gösterge paneli UI bileşenlerini (hız, odometre, vites, farlar) CAN mesajlarıyla senkronize ettim.",
-        "Kesinti, paket kaybı ve veri bütünlüğü problemleri için hata toleranslı özel algoritmalar geliştirdim.",
-        "Uygulamayı Flutter Clean Architecture prensipleriyle modüler ve ölçeklenebilir hale getirdim."
-      ]
+      companylogo: require("./assets/images/tubitaklogo.png")
     }
   ]
 };

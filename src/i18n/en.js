@@ -76,8 +76,10 @@ export const en = {
 
   // Work Experience
   workExperience: {
-    title: "Work Experience",
-    experiences: [
+    title: "Experience",
+    workTitle: "Work Experience",
+    internshipTitle: "Internship Experience",
+    workItems: [
       {
         role: "Mobile & Backend Developer",
         company: "Synctaxi",
@@ -87,9 +89,12 @@ export const en = {
           "Developed Node.js/Express + MongoDB services for driver queue flow, reservations, and role-based access.",
           "Implemented concurrency-safe queue operations using lock/atomic-operation approaches under high traffic.",
           "Improved Flutter mobile flows for real-time queue tracking and synchronized app behavior with backend services.",
+          "Contributed to Google Play testing, release readiness checks, and production rollout support.",
           "Supported CI/CD stages including build, test, container publish, and controlled deployments."
         ]
-      },
+      }
+    ],
+    internshipItems: [
       {
         role: "Mobile App / Communication Intern",
         company: "ORTEM Electronics",
@@ -101,6 +106,17 @@ export const en = {
           "Synchronized dashboard UI components (speed, odometer, gear, lights) with incoming CAN messages.",
           "Developed fault-tolerant algorithms to handle interruptions, packet loss, and data integrity issues.",
           "Structured the application following Flutter Clean Architecture principles for modularity and scalability."
+        ]
+      },
+      {
+        role: "FPGA Design Intern",
+        company: "TÜBİTAK BİLGEM",
+        date: "July 2025 – August 2025",
+        desc: "Contributed to digital design development, verification, and system integration tasks.",
+        descBullets: [
+          "Supported VHDL-based module development and validation workflows with structured testbench scenarios.",
+          "Worked on implementation and integration steps in Vivado as part of the engineering team.",
+          "Assisted control-flow validation efforts on SDK-side test runs for integrated module behavior."
         ]
       }
     ]

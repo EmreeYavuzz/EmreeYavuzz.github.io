@@ -7,8 +7,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
   const imgRef = createRef();
 
   function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+    try {
+      const colorThief = new ColorThief();
+      setColorArrays(colorThief.getColor(imgRef.current));
+    } catch (error) {
+      setColorArrays([]);
+    }
   }
 
   function rgb(values) {
@@ -30,9 +34,13 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
+  const bannerStyle = {
+    background: cardInfo.bannerColor || rgb(colorArrays)
+  };
+
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+      <div style={bannerStyle} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>

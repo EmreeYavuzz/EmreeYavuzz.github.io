@@ -76,8 +76,10 @@ export const tr = {
 
   // Work Experience
   workExperience: {
-    title: "İş Tecrübeleri",
-    experiences: [
+    title: "Tecrübeler",
+    workTitle: "İş Tecrübeleri",
+    internshipTitle: "Staj Tecrübeleri",
+    workItems: [
       {
         role: "Mobil & Backend Geliştirici",
         company: "Synctaxi",
@@ -87,9 +89,12 @@ export const tr = {
           "Node.js/Express ve MongoDB ile sürücü sırası, rezervasyon ve rol bazlı erişim için API servisleri geliştirdim.",
           "Yük altında tutarlılık için kuyruk işlemlerinde yarış durumlarını azaltan kilit/atomik işlem yaklaşımını uyguladım.",
           "Flutter mobil istemcide gerçek zamanlı sıra takibi ve kullanıcı akışlarını backend ile uyumlu hale getirdim.",
+          "Google Play test, sürüm doğrulama ve release süreçlerinde yayın öncesi kalite adımlarına katkı sağladım.",
           "CI/CD hattında build, test, container publish ve güvenli deployment adımlarına katkı sağladım."
         ]
-      },
+      }
+    ],
+    internshipItems: [
       {
         role: "Mobil Uygulama / Haberleşme Stajyeri",
         company: "ORTEM Electronics",
@@ -101,6 +106,17 @@ export const tr = {
           "Gösterge paneli UI bileşenlerini (hız, odometre, vites, farlar) CAN mesajlarıyla senkronize ettim.",
           "Kesinti, paket kaybı ve veri bütünlüğü problemleri için hata toleranslı özel algoritmalar geliştirdim.",
           "Uygulamayı Flutter Clean Architecture prensipleriyle modüler ve ölçeklenebilir hale getirdim."
+        ]
+      },
+      {
+        role: "FPGA Tasarım Stajyeri",
+        company: "TÜBİTAK BİLGEM",
+        date: "Temmuz 2025 – Ağustos 2025",
+        desc: "Dijital tasarım geliştirme, doğrulama ve sistem entegrasyon adımlarında görev aldım.",
+        descBullets: [
+          "VHDL tabanlı modül tasarımı ve testbench senaryolarıyla doğrulama süreçlerine katkı sağladım.",
+          "Vivado ortamında geliştirme ve entegrasyon adımlarında ekip içi koordinasyonla ilerledim.",
+          "SDK tarafında yazılan kontrol akışlarıyla modül davranışını doğrulayan test çalışmalarına katıldım."
         ]
       }
     ]
