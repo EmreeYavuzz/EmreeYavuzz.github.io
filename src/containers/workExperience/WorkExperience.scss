@@ -6,6 +6,7 @@
 
 .experience-section {
   margin-bottom: 2.5rem;
+  margin-top: 0.6rem;
 }
 
 .experience-section:last-child {
@@ -22,6 +23,7 @@
   font-size: 56px;
   font-weight: 400;
   margin-bottom: 1rem;
+  display: none;
 }
 
 .experience-container {
@@ -29,7 +31,7 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 1.2rem;
 }
 
 .experience-container > * {
@@ -53,5 +55,6 @@
   .experience-section-heading {
     font-size: 24px;
     text-align: center;
+    margin: 0 0 1.4rem 0;
   }
 }

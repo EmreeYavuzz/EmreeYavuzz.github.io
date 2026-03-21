@@ -68,6 +68,12 @@ const skillsSection = {
       "⚡ Üretim izleme: loglama, metrik takibi ve hata ayıklamayı kolaylaştıran gözlemlenebilirlik altyapıları"
     ),
     emoji(
+      "⚡ Firebase ile bildirim/kimlik/gerçek zamanlı veri ihtiyaçlarına yönelik servis entegrasyonları"
+    ),
+    emoji(
+      "⚡ Tailscale ile güvenli servis erişimi ve geliştirme/dağıtım ortamları arasında güvenli ağ bağlantısı"
+    ),
+    emoji(
       "⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama"
     )
   ],
@@ -122,6 +128,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Grafana",
       fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "Firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "Tailscale",
+      fontAwesomeClassname: "fas fa-network-wired"
     },
     {
       skillName: "PostgreSQL",
@@ -189,7 +203,7 @@ const workExperiences = {
   display: true,
   work: [
     {
-      companylogo: require("./assets/images/synctaxi-logo.svg"),
+      companylogo: require("./assets/images/synctaxi-logo.png"),
       bannerColor: "#f5c400"
     }
   ],
@@ -248,7 +262,7 @@ const bigProjects = {
     },
     {
       projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
-      category: ["mobile", "web", "fullstack"],
+      category: ["mobile", "fullstack"],
       projectDesc:
         "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim. Uygulama, akıcı bir kullanıcı deneyimi sağlayacak şekilde gerçek zamanlı veri akışıyla çalışıyor.",
       footerLink: [

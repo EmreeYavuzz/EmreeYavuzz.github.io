@@ -36,6 +36,8 @@ export const en = {
       "⚡ Real-Time Data Flows: queue management patterns and robust mobile-backend integration",
       "⚡ CI/CD and Container Delivery: Docker-based deployment pipelines with automated testing",
       "⚡ Production Observability: MongoDB metrics, Grafana dashboards, logs, and trace-friendly monitoring",
+      "⚡ Firebase Integrations: notifications, auth, and real-time service integrations",
+      "⚡ Tailscale Networking: secure service access across development and deployment environments",
       "⚡ System Integration: Building end-to-end solutions by combining different technologies"
     ]
   },
@@ -102,24 +104,24 @@ export const en = {
         role: "Mobile App / Communication Intern",
         company: "ORTEM Electronics",
         date: "January 2025 – February 2025",
-        desc: "Built a Flutter-based vehicle status simulation app processing serial communication (UART/CAN) data in real time.",
+        desc: "Developed a Flutter-based vehicle status simulation app that processed UART/CAN communication data in real time.",
         descBullets: [
-          "Implemented stable connection and auto-reconnect flows on Android using usb_serial.",
-          "Improved CAN frame parsing, data buffering, and packet integrity validation logic.",
+          "Implemented real-time connection and auto-reconnect flows on Android using usb_serial.",
+          "Developed CAN frame parsing, byte-level processing, buffering, and packet integrity validation logic.",
           "Synchronized dashboard components (speed, odometer, gear, lights) with incoming CAN messages.",
-          "Developed fault-tolerant handling for interruptions, packet loss, and data consistency problems.",
-          "Refactored the app with Flutter Clean Architecture principles for better modularity and maintainability."
+          "Built fault-tolerant handling for interruption, packet-loss, and data-consistency scenarios.",
+          "Structured the app with Flutter Clean Architecture for modularity, testability, and long-term maintainability."
         ]
       },
       {
         role: "FPGA Design Intern",
         company: "TÜBİTAK BİLGEM",
         date: "July 2025 – August 2025",
-        desc: "Contributed to digital design development, verification, and system integration tasks.",
+        desc: "Contributed to digital design development, verification, and integration tasks in an embedded system workflow.",
         descBullets: [
-          "Supported VHDL-based module development and validation workflows with structured testbench scenarios.",
-          "Worked on implementation and integration steps in Vivado as part of the engineering team.",
-          "Assisted control-flow validation efforts on SDK-side test runs for integrated module behavior."
+          "Worked on VHDL/Vivado module validation workflows with structured testbench scenarios.",
+          "Supported AXI4-Lite integration and embedded-system connection steps with the engineering team.",
+          "Contributed to SDK-side control flow and loopback test validation for integrated module behavior."
         ]
       }
     ]

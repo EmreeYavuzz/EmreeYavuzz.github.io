@@ -51,7 +51,6 @@ export default function WorkExperience() {
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container">
             <div>
-              <h1 className="experience-heading">{t.workExperience.title}</h1>
               {renderExperienceSection(
                 t.workExperience.workTitle,
                 workItems,

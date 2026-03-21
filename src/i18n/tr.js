@@ -36,6 +36,8 @@ export const tr = {
       "⚡ Gerçek zamanlı veri akışı, kuyruk yönetimi ve mobil-backend entegrasyonu",
       "⚡ CI/CD süreçleri, Docker tabanlı dağıtım ve otomatik test odaklı geliştirme",
       "⚡ Üretim izleme: MongoDB metrikleri, Grafana panelleri, loglama ve hata ayıklama odaklı gözlemlenebilirlik",
+      "⚡ Firebase ile bildirim/kimlik/gerçek zamanlı veri ihtiyaçlarına yönelik servis entegrasyonları",
+      "⚡ Tailscale ile güvenli servis erişimi ve geliştirme/dağıtım ortamları arasında güvenli ağ bağlantısı",
       "⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama"
     ]
   },
@@ -102,24 +104,24 @@ export const tr = {
         role: "Mobil Uygulama / Haberleşme Stajyeri",
         company: "ORTEM Electronics",
         date: "Ocak 2025 – Şubat 2025",
-        desc: "Flutter tabanlı mobil uygulama üzerinden seri haberleşme (UART/CAN) verilerini gerçek zamanlı işleyen araç durumu simülasyon sistemi geliştirdim.",
+        desc: "Flutter tabanlı mobil uygulamada UART/CAN veri akışını işleyen araç durumu simülasyon sistemi geliştirdim.",
         descBullets: [
-          "usb_serial ile Android cihazlarda kararlı bağlantı ve otomatik yeniden bağlanma akışları geliştirdim.",
-          "CAN frame parsing, veri tamponlama ve paket bütünlüğü kontrolünü daha güvenilir hale getirdim.",
-          "Hız, odometre, vites ve far gibi gösterge paneli bileşenlerini CAN mesajlarıyla senkronize ettim.",
-          "Paket kaybı, kesinti ve veri bozulması senaryolarında çalışan hata toleranslı algoritmalar yazdım.",
-          "Uygulamayı Flutter Clean Architecture yaklaşımıyla modüler ve sürdürülebilir yapıya taşıdım."
+          "usb_serial ile Android tarafında gerçek zamanlı bağlantı ve otomatik yeniden bağlanma akışlarını yönettim.",
+          "CAN frame ayrıştırma, byte-level parsing, veri tamponlama ve paket bütünlüğü kontrol algoritmaları geliştirdim.",
+          "Gösterge paneli (hız, odometre, vites, far) bileşenlerini CAN mesajlarıyla eş zamanlı senkronize ettim.",
+          "Paket kaybı ve kesinti durumlarında sistemin kararlı kalması için hata toleranslı veri işleme yapısı kurdum.",
+          "Uygulamayı Clean Architecture prensipleriyle modüler, test edilebilir ve sürdürülebilir hale getirdim."
         ]
       },
       {
         role: "FPGA Tasarım Stajyeri",
         company: "TÜBİTAK BİLGEM",
         date: "Temmuz 2025 – Ağustos 2025",
-        desc: "Dijital tasarım geliştirme, doğrulama ve sistem entegrasyon adımlarında ekip içinde aktif görev aldım.",
+        desc: "Dijital tasarım geliştirme, doğrulama ve entegrasyon süreçlerinde ekip içinde aktif görev aldım.",
         descBullets: [
-          "VHDL tabanlı modül tasarımı ve testbench senaryolarıyla doğrulama süreçlerine katkı sağladım.",
-          "Vivado ortamında geliştirme, paketleme ve entegrasyon adımlarında ekip koordinasyonuna destek oldum.",
-          "SDK tarafında yazılan kontrol akışlarıyla modül davranışını doğrulayan test çalışmalarına katıldım."
+          "VHDL ve Vivado kullanarak testbench destekli modül doğrulama süreçlerinde çalıştım.",
+          "AXI4-Lite tabanlı entegrasyon ve gömülü sistem bağlantı adımlarında geliştirme ekibine destek oldum.",
+          "SDK tarafındaki kontrol akışları ve loopback testleriyle modül davranışının doğrulanmasına katkı sağladım."
         ]
       }
     ]
