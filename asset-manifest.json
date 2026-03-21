@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d950cd40.css",
-    "main.js": "/static/js/main.86aab4dd.js",
+    "main.css": "/static/css/main.17fc7a1f.css",
+    "main.js": "/static/js/main.a20f98cd.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
@@ -9,6 +9,7 @@
     "static/media/ortemlogo.png": "/static/media/ortemlogo.d8757e458bb802c468d9.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/synctaxi-logo.png": "/static/media/synctaxi-logo.47aa77f59fbd30e931c1.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
@@ -18,17 +19,16 @@
     "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/pwaLogo.webp": "/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/index.html",
-    "static/media/synctaxi-logo.svg": "/static/media/synctaxi-logo.415b5e8fc167d3b489d54190c5189b59.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.d950cd40.css.map": "/static/css/main.d950cd40.css.map",
-    "main.86aab4dd.js.map": "/static/js/main.86aab4dd.js.map",
+    "main.17fc7a1f.css.map": "/static/css/main.17fc7a1f.css.map",
+    "main.a20f98cd.js.map": "/static/js/main.a20f98cd.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
     "769.69ddbe33.chunk.js.map": "/static/js/769.69ddbe33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d950cd40.css",
-    "static/js/main.86aab4dd.js"
+    "static/css/main.17fc7a1f.css",
+    "static/js/main.a20f98cd.js"
   ]
 }
