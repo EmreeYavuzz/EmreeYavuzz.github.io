@@ -35,7 +35,7 @@ export const en = {
       "⚡ MongoDB-Centric Data Design: indexing, query optimization, and consistency in concurrent operations",
       "⚡ Real-Time Data Flows: queue management patterns and robust mobile-backend integration",
       "⚡ CI/CD and Container Delivery: Docker-based deployment pipelines with automated testing",
-      "⚡ Production Observability: logs, metrics, and trace-friendly monitoring for faster debugging",
+      "⚡ Production Observability: MongoDB metrics, Grafana dashboards, logs, and trace-friendly monitoring",
       "⚡ System Integration: Building end-to-end solutions by combining different technologies"
     ]
   },
@@ -48,11 +48,14 @@ export const en = {
         schoolName: "Gebze Technical University",
         subHeader: "Computer Engineering (English)",
         duration: "September 2020 - September 2025",
-        desc: "Built a strong foundation in algorithms, software development principles, and hardware-based courses through English-medium computer engineering education at GTU.",
+        desc: "Built a strong foundation in algorithms, software architecture, data structures, and system design through the English-medium computer engineering program at GTU, while turning theory into practical products in team projects.",
         descBullets: [
-          "Developed projects and applications with C, C++, Java, and Python",
-          "Gained project experience in mobile, web, and backend areas",
-          "Worked on artificial intelligence, computer vision, and embedded systems"
+          "Developed both individual and team-based software projects with C, C++, Java, and Python.",
+          "Gained end-to-end product development experience across mobile, web, and backend domains.",
+          "Applied database design, API architecture, and test-driven engineering practices in coursework and projects.",
+          "Worked on model development and evaluation pipelines in AI and computer vision classes.",
+          "Strengthened my understanding of real-time systems, concurrency, and performance-oriented software design.",
+          "Improved technical communication, documentation, and project planning through multidisciplinary teamwork."
         ]
       },
       {
@@ -99,13 +102,13 @@ export const en = {
         role: "Mobile App / Communication Intern",
         company: "ORTEM Electronics",
         date: "January 2025 – February 2025",
-        desc: "Developed a vehicle status simulation system that processes serial communication (UART/CAN) data through a Flutter-based mobile application.",
+        desc: "Built a Flutter-based vehicle status simulation app processing serial communication (UART/CAN) data in real time.",
         descBullets: [
-          "Implemented real-time connection and reconnection mechanisms on Android devices using the usb_serial library.",
-          "Designed CAN frame parsing, data buffering, and packet integrity validation algorithms.",
-          "Synchronized dashboard UI components (speed, odometer, gear, lights) with incoming CAN messages.",
-          "Developed fault-tolerant algorithms to handle interruptions, packet loss, and data integrity issues.",
-          "Structured the application following Flutter Clean Architecture principles for modularity and scalability."
+          "Implemented stable connection and auto-reconnect flows on Android using usb_serial.",
+          "Improved CAN frame parsing, data buffering, and packet integrity validation logic.",
+          "Synchronized dashboard components (speed, odometer, gear, lights) with incoming CAN messages.",
+          "Developed fault-tolerant handling for interruptions, packet loss, and data consistency problems.",
+          "Refactored the app with Flutter Clean Architecture principles for better modularity and maintainability."
         ]
       },
       {
@@ -138,6 +141,16 @@ export const en = {
           "Developed an AI-powered platform enabling users to create resumes in real-time. Enhanced user experience through dynamic content generation and instant preview updates."
       },
       {
+        projectName: "OPIUM – Social Media / Event Application",
+        projectDesc:
+          "Developed a cross-platform social media application where users can create and join events, share posts, and chat in real-time."
+      },
+      {
+        projectName: "Student Management System",
+        projectDesc:
+          "Developed a full-stack student management system for handling student, course, and exam data; featuring multi-criteria search, exam management, GPA calculation, and course history tracking."
+      },
+      {
         projectName: "Pseudo-Labeled Keypoint Detection & Feature Extraction (ML)",
         projectDesc:
           "Developed an AI model for automatic keypoint detection and feature extraction in images. Optimized the system for image matching and scene analysis applications."
@@ -148,19 +161,9 @@ export const en = {
           "Contributed to a team-developed 3D survival game, implementing combat mechanics, enemy AI behavior, and level designs."
       },
       {
-        projectName: "OPIUM – Social Media / Event Application",
-        projectDesc:
-          "Developed a cross-platform social media application where users can create and join events, share posts, and chat in real-time."
-      },
-      {
         projectName: "Smart Environmental Monitoring and Control System (Verilog, C)",
         projectDesc:
           "Designed a monitoring system that processes multiple sensor data in real-time between FPGA and MCU through bidirectional communication. Implemented visual and auditory warning mechanisms for real-time status tracking."
-      },
-      {
-        projectName: "Student Management System",
-        projectDesc:
-          "Developed a full-stack student management system for handling student, course, and exam data; featuring multi-criteria search, exam management, GPA calculation, and course history tracking."
       },
       {
         projectName: "Operating System and CPU Simulator (Assembly, Python)",

@@ -35,7 +35,7 @@ export const tr = {
       "⚡ MongoDB odaklı veri modelleme, sorgu optimizasyonu ve eş zamanlı işlem senaryolarında tutarlılık",
       "⚡ Gerçek zamanlı veri akışı, kuyruk yönetimi ve mobil-backend entegrasyonu",
       "⚡ CI/CD süreçleri, Docker tabanlı dağıtım ve otomatik test odaklı geliştirme",
-      "⚡ Üretim izleme: loglama, metrik takibi ve hata ayıklamayı kolaylaştıran gözlemlenebilirlik altyapıları",
+      "⚡ Üretim izleme: MongoDB metrikleri, Grafana panelleri, loglama ve hata ayıklama odaklı gözlemlenebilirlik",
       "⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama"
     ]
   },
@@ -48,11 +48,14 @@ export const tr = {
         schoolName: "Gebze Teknik Üniversitesi",
         subHeader: "Bilgisayar Mühendisliği (İngilizce)",
         duration: "Eylül 2020 - Eylül 2025",
-        desc: "GTÜ'de İngilizce bilgisayar mühendisliği eğitimi alarak algoritmalar, yazılım geliştirme prensipleri ve donanım temelli derslerde güçlü bir temel oluşturdum.",
+        desc: "GTÜ Bilgisayar Mühendisliği programında algoritmalar, yazılım mimarisi, veri yapıları ve sistem tasarımı alanlarında güçlü bir temel oluşturdum; takım projeleriyle teoriyi üretime dönüştürme fırsatı buldum.",
         descBullets: [
-          "C, C++, Java ve Python ile projeler, uygulamalar geliştirdim",
-          "Mobil, web ve backend alanlarında proje deneyimleri edindim",
-          "Yapay zeka ve bilgisayarla görme, gömülü sistemlerle ilgili çalışmalar yaptım"
+          "C, C++, Java ve Python ile hem bireysel hem ekip bazlı yazılım projeleri geliştirdim.",
+          "Mobil, web ve backend alanlarında uçtan uca ürün geliştirme deneyimi kazandım.",
+          "Veri tabanı modelleme, API tasarımı ve test odaklı geliştirme pratiklerini proje çalışmalarında uyguladım.",
+          "Yapay zeka ve bilgisayarla görme dersleri kapsamında model geliştirme ve değerlendirme süreçlerinde çalıştım.",
+          "Gerçek zamanlı sistemler, eşzamanlılık ve performans odaklı tasarım konularında akademik ve pratik deneyim edindim.",
+          "Farklı disiplinlerden ekiplerle çalışarak teknik iletişim, dokümantasyon ve proje planlama becerilerimi geliştirdim."
         ]
       },
       {
@@ -99,23 +102,23 @@ export const tr = {
         role: "Mobil Uygulama / Haberleşme Stajyeri",
         company: "ORTEM Electronics",
         date: "Ocak 2025 – Şubat 2025",
-        desc: "Flutter tabanlı mobil uygulama üzerinden seri haberleşme (UART/CAN) verilerini işleyen bir araç durum simülasyon sistemi geliştirdim.",
+        desc: "Flutter tabanlı mobil uygulama üzerinden seri haberleşme (UART/CAN) verilerini gerçek zamanlı işleyen araç durumu simülasyon sistemi geliştirdim.",
         descBullets: [
-          "usb_serial kütüphanesi ile Android cihazlarda gerçek zamanlı bağlantı ve yeniden bağlanma mekanizmaları geliştirdim.",
-          "CAN frame parsing, veri tamponlama ve paket bütünlüğü kontrol algoritmaları tasarladım.",
-          "Gösterge paneli UI bileşenlerini (hız, odometre, vites, farlar) CAN mesajlarıyla senkronize ettim.",
-          "Kesinti, paket kaybı ve veri bütünlüğü problemleri için hata toleranslı özel algoritmalar geliştirdim.",
-          "Uygulamayı Flutter Clean Architecture prensipleriyle modüler ve ölçeklenebilir hale getirdim."
+          "usb_serial ile Android cihazlarda kararlı bağlantı ve otomatik yeniden bağlanma akışları geliştirdim.",
+          "CAN frame parsing, veri tamponlama ve paket bütünlüğü kontrolünü daha güvenilir hale getirdim.",
+          "Hız, odometre, vites ve far gibi gösterge paneli bileşenlerini CAN mesajlarıyla senkronize ettim.",
+          "Paket kaybı, kesinti ve veri bozulması senaryolarında çalışan hata toleranslı algoritmalar yazdım.",
+          "Uygulamayı Flutter Clean Architecture yaklaşımıyla modüler ve sürdürülebilir yapıya taşıdım."
         ]
       },
       {
         role: "FPGA Tasarım Stajyeri",
         company: "TÜBİTAK BİLGEM",
         date: "Temmuz 2025 – Ağustos 2025",
-        desc: "Dijital tasarım geliştirme, doğrulama ve sistem entegrasyon adımlarında görev aldım.",
+        desc: "Dijital tasarım geliştirme, doğrulama ve sistem entegrasyon adımlarında ekip içinde aktif görev aldım.",
         descBullets: [
           "VHDL tabanlı modül tasarımı ve testbench senaryolarıyla doğrulama süreçlerine katkı sağladım.",
-          "Vivado ortamında geliştirme ve entegrasyon adımlarında ekip içi koordinasyonla ilerledim.",
+          "Vivado ortamında geliştirme, paketleme ve entegrasyon adımlarında ekip koordinasyonuna destek oldum.",
           "SDK tarafında yazılan kontrol akışlarıyla modül davranışını doğrulayan test çalışmalarına katıldım."
         ]
       }
@@ -138,6 +141,16 @@ export const tr = {
           "Kullanıcıların gerçek zamanlı olarak özgeçmiş oluşturmasını sağlayan yapay zekâ destekli bir platform geliştirdim. Sistem, dinamik içerik üretimi ve anlık güncellemeyle kullanıcı deneyimini önemli ölçüde kolaylaştırıyor."
       },
       {
+        projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
+        projectDesc:
+          "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim."
+      },
+      {
+        projectName: "Öğrenci Yönetim Sistemi",
+        projectDesc:
+          "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim."
+      },
+      {
         projectName: "Pseudo Etiketli Anahtar Nokta Tespiti & Feature Extraction (ML)",
         projectDesc:
           "Görüntülerde anahtar noktaları otomatik tespit edip anlamlı özellikler çıkaran bir yapay zekâ modeli geliştirdim. Sistem, görüntü eşleştirme ve sahne analizinde kullanılmak üzere optimize edildi."
@@ -148,19 +161,9 @@ export const tr = {
           "Takım çalışmasıyla geliştirilen bir 3D hayatta kalma oyununda, dövüş mekanikleri, düşman yapay zekâsı ve bölüm tasarımlarının oluşturulmasında görev aldım."
       },
       {
-        projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
-        projectDesc:
-          "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim."
-      },
-      {
         projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
         projectDesc:
           "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı."
-      },
-      {
-        projectName: "Öğrenci Yönetim Sistemi",
-        projectDesc:
-          "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim."
       },
       {
         projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",

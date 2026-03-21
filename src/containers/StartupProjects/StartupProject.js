@@ -7,6 +7,10 @@ import LanguageContext from "../../contexts/LanguageContext";
 import {getTranslation} from "../../i18n";
 
 export default function StartupProject() {
+  const categoryLabelMap = {
+    fullstack: "full stack"
+  };
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -65,7 +69,7 @@ export default function StartupProject() {
                       <div className="category-badges">
                         {categories.map((cat, idx) => (
                           <span key={idx} className={`category-badge ${cat}`}>
-                            {cat}
+                            {categoryLabelMap[cat] || cat}
                           </span>
                         ))}
                       </div>

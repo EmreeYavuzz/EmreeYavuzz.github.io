@@ -96,10 +96,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-mobile-alt"
     },
     {
-      skillName: "VHDL / Verilog",
-      fontAwesomeClassname: "fas fa-microchip"
-    },
-    {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux"
     },
@@ -120,6 +116,14 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node-js"
     },
     {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf"
+    },
+    {
+      skillName: "Grafana",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
       skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database"
     }
@@ -137,11 +141,14 @@ const educationInfo = {
       logo: require("./assets/images/gtulogo.png"),
       subHeader: "Bilgisayar Mühendisliği (İngilizce)",
       duration: "Eylül 2020 - Eylül 2025",
-      desc: "GTÜ’de İngilizce bilgisayar mühendisliği eğitimi alarak algoritmalar, yazılım geliştirme prensipleri ve donanım temelli derslerde güçlü bir temel oluşturdum.",
+      desc: "GTÜ Bilgisayar Mühendisliği programında algoritmalar, yazılım mimarisi, veri yapıları ve sistem tasarımı alanlarında güçlü bir temel oluşturdum; takım projeleriyle teoriyi üretime dönüştürme fırsatı buldum.",
       descBullets: [
-        "C, C++, Java ve Python ile projeler,uygulamalar geliştirdim",
-        "Mobil, web ve backend alanlarında proje deneyimleri edindim",
-        "Yapay zeka ve bilgisayarla görme, gömülü sistemlerle ilgili çalışmalar yaptım"
+        "C, C++, Java ve Python ile hem bireysel hem ekip bazlı yazılım projeleri geliştirdim.",
+        "Mobil, web ve backend alanlarında uçtan uca ürün geliştirme deneyimi kazandım.",
+        "Veri tabanı modelleme, API tasarımı ve test odaklı geliştirme pratiklerini proje çalışmalarında uyguladım.",
+        "Yapay zeka ve bilgisayarla görme dersleri kapsamında model geliştirme ve değerlendirme süreçlerinde çalıştım.",
+        "Gerçek zamanlı sistemler, eşzamanlılık ve performans odaklı tasarım konularında akademik ve pratik deneyim edindim.",
+        "Farklı disiplinlerden ekiplerle çalışarak teknik iletişim, dokümantasyon ve proje planlama becerilerimi geliştirdim."
       ]
     },
     {
@@ -158,7 +165,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "İngilizce",
@@ -240,6 +247,29 @@ const bigProjects = {
       ]
     },
     {
+      projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
+      category: ["mobile", "web", "fullstack"],
+      projectDesc:
+        "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim. Uygulama, akıcı bir kullanıcı deneyimi sağlayacak şekilde gerçek zamanlı veri akışıyla çalışıyor.",
+      footerLink: [
+        {
+          name: "Drive",
+          url: "https://drive.google.com/drive/folders/1eSJ5nVL5uqzpAtlkm8wDFMwFxvfsLCHy"
+        },
+        {name: "Youtube", url: "https://www.youtube.com/watch?v=eeqyQrKjxt0"}
+      ]
+    },
+    {
+      projectName: "Öğrenci Yönetim Sistemi",
+      category: ["fullstack"],
+      projectDesc:
+        "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim.",
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/EmreeYavuzz/iqb-poc"},
+        {name: "Website", url: "https://bulut.enesakar.com.tr/"}
+      ]
+    },
+    {
       projectName:
         "Pseudo Etiketli Anahtar Nokta Tespiti & Feature Extraction (ML)",
       category: ["ai"],
@@ -265,19 +295,6 @@ const bigProjects = {
       ]
     },
     {
-      projectName: "OPIUM – Sosyal Medya / Etkinlik Uygulaması",
-      category: ["mobile"],
-      projectDesc:
-        "Kullanıcıların etkinlik oluşturup katılabildiği, gönderi paylaşabildiği ve gerçek zamanlı sohbet edebildiği çok platformlu bir sosyal medya uygulaması geliştirdim. Uygulama, akıcı bir kullanıcı deneyimi sağlayacak şekilde gerçek zamanlı veri akışıyla çalışıyor.",
-      footerLink: [
-        {
-          name: "Drive",
-          url: "https://drive.google.com/drive/folders/1eSJ5nVL5uqzpAtlkm8wDFMwFxvfsLCHy"
-        },
-        {name: "Youtube", url: "https://www.youtube.com/watch?v=eeqyQrKjxt0"}
-      ]
-    },
-    {
       //image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
       category: ["hardware", "systems"],
@@ -292,17 +309,6 @@ const bigProjects = {
       ]
     },
     
-    {
-      projectName: "Öğrenci Yönetim Sistemi",
-      category: ["fullstack"],
-      projectDesc:
-        "Öğrenci, ders ve sınav bilgilerinin yönetildiği; çok kriterli arama, sınav ekleme, ortalama hesaplama ve tamamlanan derslerin gösterimini sağlayan full-stack bir öğrenci yönetim sistemi geliştirdim.",
-      footerLink: [
-        {name: "GitHub", url: "https://github.com/EmreeYavuzz/iqb-poc"},
-        {name: "Website", url: "https://bulut.enesakar.com.tr/"}
-      ]
-    },
-
     {
       projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
       category: ["systems"],

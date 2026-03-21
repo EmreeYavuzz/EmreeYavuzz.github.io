@@ -65,6 +65,10 @@
   background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%);
 }
 
+.project-card.category-web::before {
+  background: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
+}
+
 // Çoklu kategori kombinasyonları
 .project-card.category-ai.category-fullstack::before {
   background: linear-gradient(90deg, #f093fb 0%, #4facfe 50%, #00f2fe 100%);
@@ -76,6 +80,10 @@
 
 .project-card.category-hardware.category-systems::before {
   background: linear-gradient(90deg, #43e97b 0%, #fa709a 50%, #fee140 100%);
+}
+
+.project-card.category-mobile.category-web.category-fullstack::before {
+  background: linear-gradient(90deg, #30cfd0 0%, #00b09b 50%, #4facfe 100%);
 }
 
 .project-card-light {
@@ -206,6 +214,10 @@
 
 .category-badge.mobile {
   background: linear-gradient(90deg, #30cfd0 0%, #330867 100%);
+}
+
+.category-badge.web {
+  background: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
 }
 
 .category-badge.game {
