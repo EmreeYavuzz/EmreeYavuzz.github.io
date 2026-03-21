@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd04107c.css",
-    "main.js": "/static/js/main.d7d80f5f.js",
+    "main.css": "/static/css/main.ab64298d.css",
+    "main.js": "/static/js/main.7599b05f.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.69ddbe33.chunk.js": "/static/js/769.69ddbe33.chunk.js",
     "static/media/ortemlogo.png": "/static/media/ortemlogo.d8757e458bb802c468d9.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/resume.pdf": "/static/media/resume.c753d9d0ec95696b4351.pdf",
-    "static/media/resume_eng.pdf": "/static/media/resume_eng.71f85d8cd3d1076b9f0f.pdf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
@@ -21,15 +19,15 @@
     "static/media/pwaLogo.webp": "/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.dd04107c.css.map": "/static/css/main.dd04107c.css.map",
-    "main.d7d80f5f.js.map": "/static/js/main.d7d80f5f.js.map",
+    "main.ab64298d.css.map": "/static/css/main.ab64298d.css.map",
+    "main.7599b05f.js.map": "/static/js/main.7599b05f.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
     "769.69ddbe33.chunk.js.map": "/static/js/769.69ddbe33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd04107c.css",
-    "static/js/main.d7d80f5f.js"
+    "static/css/main.ab64298d.css",
+    "static/js/main.7599b05f.js"
   ]
 }
