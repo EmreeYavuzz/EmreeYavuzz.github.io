@@ -23,8 +23,8 @@ const greeting = {
   username: "Emre Yavuz",
   title: "Merhaba, ben Emre 👋",
   subTitle:
-    "Mobil uygulamalardan backend servislerine, gerçek zamanlı sistemlerden donanımla konuşan yazılımlara kadar farklı katmanlarda projeler geliştiriyorum. Sistemlerin hem görünen tarafıyla hem de perde arkasındaki detaylarıyla ilgilenmeyi seviyorum.",
-  resumeLink: "resume.pdf",
+    "Mobil uygulamalar, backend servisler ve gerçek zamanlı sistemler üzerinde uçtan uca ürünler geliştiriyorum. Özellikle mobil istemci, API tasarımı, veri akışı ve operasyonel olarak sürdürülebilir sistemler kurmaya odaklanıyorum.",
+  resumeLink: "",
   displayGreeting: true
 };
 
@@ -47,25 +47,25 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "Neler yapıyorum",
   subTitle:
-    "Donanım, sistem ve yazılım katmanlarını birlikte ele alarak; performanslı, ölçeklenebilir ve gerçek hayatta çalışan çözümler geliştiriyorum.",
+    "Mobil ve backend odaklı, üretime çıkabilen ve gerçek kullanıcıya dokunan uygulamalar geliştiriyorum.",
   skills: [
     emoji(
-      "⚡ Mobil uygulama geliştirme: Flutter tabanlı uygulamalar, cihazlarla veri alışverişi ve gerçek zamanlı iletişim"
+      "⚡ Flutter ile mobil uygulama geliştirme, ölçeklenebilir ekran mimarisi ve sürdürülebilir kod yapısı"
     ),
     emoji(
-      "⚡ Backend geliştirme: RESTful API’ler, veri tabanı entegrasyonu ve temel sunucu mimarileri"
+      "⚡ Node.js/Express ile RESTful API geliştirme, doğrulama, yetkilendirme ve servis katmanı tasarımı"
     ),
     emoji(
-      "⚡ Sistem programlama: C/C++ ile çok iş parçacıklı yapılar, senkronizasyon ve performans odaklı tasarım"
+      "⚡ MongoDB odaklı veri modelleme, sorgu optimizasyonu ve eş zamanlı işlem senaryolarında tutarlılık"
     ),
     emoji(
-      "⚡ Gömülü sistemler: Mikrodenetleyici tabanlı geliştirme, düşük seviye programlama ve donanım entegrasyonu"
+      "⚡ Gerçek zamanlı veri akışı, kuyruk yönetimi ve mobil-backend entegrasyonu"
     ),
     emoji(
-      "⚡ FPGA tabanlı dijital tasarım: Verilog/VHDL ile modül geliştirme, doğrulama ve donanım–yazılım bütünleşmesi"
+      "⚡ CI/CD süreçleri, Docker tabanlı dağıtım ve otomatik test odaklı geliştirme"
     ),
     emoji(
-      "⚡ Python ile veri işleme, görüntü işleme ve makine öğrenimi temelli projeler"
+      "⚡ Üretim izleme: loglama, metrik takibi ve hata ayıklamayı kolaylaştıran gözlemlenebilirlik altyapıları"
     ),
     emoji(
       "⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama"
@@ -182,16 +182,16 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "FPGA Tasarım Stajyeri",
-      company: "TÜBİTAK BİLGEM",
-      companylogo: require("./assets/images/tubitaklogo.png"),
-      date: "Temmuz 2025 – Ağustos 2025",
-      desc: "VHDL kullanarak DO-254 uyumlu UART IP çekirdeği tasarladım, doğruladım ve MicroBlaze tabanlı gömülü sisteme entegre ettim.",
+      role: "Mobil & Backend Geliştirici",
+      company: "Synctaxi",
+      companylogo: require("./assets/images/ortemlogo.png"),
+      date: "2025 – Devam Ediyor",
+      desc: "Gerçek zamanlı taksi sıra yönetim platformunda mobil uygulama, backend API ve operasyon paneli taraflarında geliştirme yaptım.",
       descBullets: [
-        "VHDL kullanarak UART tabanlı bir dijital modül tasarladım ve FSM yapısını ModelSim’de testbench ile doğruladım",
-        "Modülü Vivado’da geliştirdim; oversampling ve senkronizatör ekleyerek daha kararlı ve güvenilir çalışmasını sağladım.",
-        "Daha sonra tasarımı AXI4-Lite arayüzüyle paketleyip MicroBlaze işlemcili sisteme entegre ettim.",
-        "SDK’da C ile kontrol yazılımı yazıp loopback testlerini tamamlayarak sistemi FPGA üzerinde çalışır hale getirdim."
+        "Node.js/Express ve MongoDB ile sürücü sırası, rezervasyon ve rol bazlı erişim için API servisleri geliştirdim.",
+        "Yük altında tutarlılık için kuyruk işlemlerinde yarış durumlarını azaltan kilit/atomik işlem yaklaşımını uyguladım.",
+        "Flutter mobil istemcide gerçek zamanlı sıra takibi ve kullanıcı akışlarını backend ile uyumlu hale getirdim.",
+        "CI/CD hattında build, test, container publish ve güvenli deployment adımlarına katkı sağladım."
       ]
     },
     {
@@ -331,14 +331,6 @@ const bigProjects = {
         }
       ]
     },
-    {
-      projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
-      category: ["systems"],
-      projectDesc:
-        "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim. Sipariş iptallerinde hazırlama–fırın–teslimat aşamalarını geri alarak sistemi tamamen tutarlı halde çalıştırdım.",
-      footerLink: []
-    },
-    
 
   ],
   display: true

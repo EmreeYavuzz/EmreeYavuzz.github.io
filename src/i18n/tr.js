@@ -19,7 +19,7 @@ export const tr = {
   greeting: {
     title: "Merhaba, ben Emre 👋",
     subTitle:
-      "Mobil uygulamalardan backend servislerine, gerçek zamanlı sistemlerden donanımla konuşan yazılımlara kadar farklı katmanlarda projeler geliştiriyorum. Sistemlerin hem görünen tarafıyla hem de perde arkasındaki detaylarıyla ilgilenmeyi seviyorum.",
+      "Mobil uygulamalar, backend servisler ve gerçek zamanlı sistemler üzerinde uçtan uca ürünler geliştiriyorum. Özellikle mobil istemci, API tasarımı, veri akışı ve operasyonel olarak sürdürülebilir sistemler kurmaya odaklanıyorum.",
     resumeButton: "Özgeçmişimi İncele",
     contactButton: "İletişime Geç"
   },
@@ -28,14 +28,14 @@ export const tr = {
   skills: {
     title: "Neler yapıyorum",
     subTitle:
-      "Donanım, sistem ve yazılım katmanlarını birlikte ele alarak; performanslı, ölçeklenebilir ve gerçek hayatta çalışan çözümler geliştiriyorum.",
+      "Mobil ve backend odaklı, üretime çıkabilen ve gerçek kullanıcıya dokunan uygulamalar geliştiriyorum.",
     skillsList: [
-      "⚡ Mobil uygulama geliştirme: Flutter tabanlı uygulamalar, cihazlarla veri alışverişi ve gerçek zamanlı iletişim",
-      "⚡ Backend geliştirme: RESTful API'ler, veri tabanı entegrasyonu ve temel sunucu mimarileri",
-      "⚡ Sistem programlama: C/C++ ile çok iş parçacıklı yapılar, senkronizasyon ve performans odaklı tasarım",
-      "⚡ Gömülü sistemler: Mikrodenetleyici tabanlı geliştirme, düşük seviye programlama ve donanım entegrasyonu",
-      "⚡ FPGA tabanlı dijital tasarım: Verilog/VHDL ile modül geliştirme, doğrulama ve donanım–yazılım bütünleşmesi",
-      "⚡ Python ile veri işleme, görüntü işleme ve makine öğrenimi temelli projeler",
+      "⚡ Flutter ile mobil uygulama geliştirme, ölçeklenebilir ekran mimarisi ve sürdürülebilir kod yapısı",
+      "⚡ Node.js/Express ile RESTful API geliştirme, doğrulama, yetkilendirme ve servis katmanı tasarımı",
+      "⚡ MongoDB odaklı veri modelleme, sorgu optimizasyonu ve eş zamanlı işlem senaryolarında tutarlılık",
+      "⚡ Gerçek zamanlı veri akışı, kuyruk yönetimi ve mobil-backend entegrasyonu",
+      "⚡ CI/CD süreçleri, Docker tabanlı dağıtım ve otomatik test odaklı geliştirme",
+      "⚡ Üretim izleme: loglama, metrik takibi ve hata ayıklamayı kolaylaştıran gözlemlenebilirlik altyapıları",
       "⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama"
     ]
   },
@@ -79,15 +79,15 @@ export const tr = {
     title: "İş Tecrübeleri",
     experiences: [
       {
-        role: "FPGA Tasarım Stajyeri",
-        company: "TÜBİTAK BİLGEM",
-        date: "Temmuz 2025 – Ağustos 2025",
-        desc: "VHDL kullanarak DO-254 uyumlu UART IP çekirdeği tasarladım, doğruladım ve MicroBlaze tabanlı gömülü sisteme entegre ettim.",
+        role: "Mobil & Backend Geliştirici",
+        company: "Synctaxi",
+        date: "2025 – Devam Ediyor",
+        desc: "Gerçek zamanlı taksi sıra yönetim platformunda mobil uygulama, backend API ve operasyon paneli taraflarında geliştirme yaptım.",
         descBullets: [
-          "VHDL kullanarak UART tabanlı bir dijital modül tasarladım ve FSM yapısını ModelSim'de testbench ile doğruladım",
-          "Modülü Vivado'da geliştirdim; oversampling ve senkronizatör ekleyerek daha kararlı ve güvenilir çalışmasını sağladım.",
-          "Daha sonra tasarımı AXI4-Lite arayüzüyle paketleyip MicroBlaze işlemcili sisteme entegre ettim.",
-          "SDK'da C ile kontrol yazılımı yazıp loopback testlerini tamamlayarak sistemi FPGA üzerinde çalışır hale getirdim."
+          "Node.js/Express ve MongoDB ile sürücü sırası, rezervasyon ve rol bazlı erişim için API servisleri geliştirdim.",
+          "Yük altında tutarlılık için kuyruk işlemlerinde yarış durumlarını azaltan kilit/atomik işlem yaklaşımını uyguladım.",
+          "Flutter mobil istemcide gerçek zamanlı sıra takibi ve kullanıcı akışlarını backend ile uyumlu hale getirdim.",
+          "CI/CD hattında build, test, container publish ve güvenli deployment adımlarına katkı sağladım."
         ]
       },
       {
@@ -150,11 +150,6 @@ export const tr = {
         projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
         projectDesc:
           "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum."
-      },
-      {
-        projectName: "Pide Dükkanı Simülasyonu (C, Multi-Threading)",
-        projectDesc:
-          "Gerçek zamanlı sipariş akışını yöneten bir restoran simülasyonu geliştirdim. Aşçı ve kuryelerin çoklu thread yapısıyla çalıştığı sistemde fırın ve teslimat gibi paylaşılan kaynakları mutex ve condition variable ile yönettim."
       }
     ]
   },

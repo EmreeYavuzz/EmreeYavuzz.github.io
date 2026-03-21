@@ -19,7 +19,7 @@ export const en = {
   greeting: {
     title: "Hi, I'm Emre 👋",
     subTitle:
-      "I develop projects across various layers from mobile applications to backend services, from real-time systems to hardware-interfacing software. I enjoy working on both the visible side of systems and the details behind the scenes.",
+      "I build end-to-end products across mobile applications, backend services, and real-time systems. My core focus is mobile client development, API design, reliable data flow, and operationally sustainable systems.",
     resumeButton: "Download Resume",
     contactButton: "Contact Me"
   },
@@ -28,14 +28,14 @@ export const en = {
   skills: {
     title: "What I Do",
     subTitle:
-      "I build performant, scalable, and real-world solutions by combining hardware, system, and software layers.",
+      "I build production-ready mobile and backend solutions focused on reliability, scalability, and real users.",
     skillsList: [
-      "⚡ Mobile App Development: Flutter-based applications with device communication and real-time interaction",
-      "⚡ Backend Development: RESTful APIs, database integration, and server architecture design",
-      "⚡ System Programming: Multi-threaded applications with C/C++, synchronization, and performance optimization",
-      "⚡ Embedded Systems: Microcontroller development, low-level programming, and hardware integration",
-      "⚡ FPGA Digital Design: Module development with Verilog/VHDL, verification, and HW-SW integration",
-      "⚡ Data & ML: Data processing, image processing, and machine learning projects with Python",
+      "⚡ Mobile Development with Flutter: scalable UI architecture and maintainable app structure",
+      "⚡ Backend Development with Node.js/Express: REST APIs, validation, authorization, and service-layer design",
+      "⚡ MongoDB-Centric Data Design: indexing, query optimization, and consistency in concurrent operations",
+      "⚡ Real-Time Data Flows: queue management patterns and robust mobile-backend integration",
+      "⚡ CI/CD and Container Delivery: Docker-based deployment pipelines with automated testing",
+      "⚡ Production Observability: logs, metrics, and trace-friendly monitoring for faster debugging",
       "⚡ System Integration: Building end-to-end solutions by combining different technologies"
     ]
   },
@@ -79,15 +79,15 @@ export const en = {
     title: "Work Experience",
     experiences: [
       {
-        role: "FPGA Design Intern",
-        company: "TÜBİTAK BİLGEM",
-        date: "July 2025 – August 2025",
-        desc: "Designed, verified, and integrated a DO-254 compliant UART IP core using VHDL into a MicroBlaze-based embedded system.",
+        role: "Mobile & Backend Developer",
+        company: "Synctaxi",
+        date: "2025 – Present",
+        desc: "Contributed to a real-time taxi queue platform across mobile app, backend APIs, and operator-facing workflows.",
         descBullets: [
-          "Designed a UART-based digital module using VHDL and verified the FSM structure with testbenches in ModelSim.",
-          "Developed the module in Vivado; added oversampling and synchronizer for improved stability and reliability.",
-          "Packaged the design with AXI4-Lite interface and integrated it into the MicroBlaze processor system.",
-          "Wrote control software in C using SDK and completed loopback tests to validate the system on FPGA."
+          "Developed Node.js/Express + MongoDB services for driver queue flow, reservations, and role-based access.",
+          "Implemented concurrency-safe queue operations using lock/atomic-operation approaches under high traffic.",
+          "Improved Flutter mobile flows for real-time queue tracking and synchronized app behavior with backend services.",
+          "Supported CI/CD stages including build, test, container publish, and controlled deployments."
         ]
       },
       {
@@ -150,11 +150,6 @@ export const en = {
         projectName: "Operating System and CPU Simulator (Assembly, Python)",
         projectDesc:
           "Developed a CPU simulator based on a custom instruction set and a basic operating system kernel. Implemented memory management, user/kernel mode separation, and syscall mechanisms."
-      },
-      {
-        projectName: "Pide Shop Simulation (C, Multi-Threading)",
-        projectDesc:
-          "Built a restaurant simulation managing real-time order flow. Implemented mutex and condition variables to coordinate shared resources (oven, delivery) in a multi-threaded environment with cooks and couriers."
       }
     ]
   },
