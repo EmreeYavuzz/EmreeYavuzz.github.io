@@ -21,8 +21,8 @@
   display: flex;
   flex-direction: column;
   background-color: $lightBackground2;
-  padding: 1.5rem;
-  border-radius: 10px;
+  padding: 1.7rem;
+  border-radius: 14px;
   border: 1px solid $lightBorder1;
   justify-content: center;
   position: relative;
@@ -79,14 +79,14 @@
 }
 
 .project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: $lightBoxShadowDark 0px 14px 34px -18px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
+  box-shadow: 0px 14px 34px -18px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.25s ease;
@@ -96,11 +96,11 @@
   text-align: center;
 }
 .project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: $lightBoxShadowDark 0px 24px 38px -14px;
   transform: translateY(-5px);
 }
 .project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  box-shadow: 0px 24px 38px -14px $darkBoxShadow;
   transform: translateY(-5px);
 }
 
@@ -142,7 +142,7 @@
   color: $lightBackground3;
   vertical-align: middle;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 8px;
   display: inline-flex;
   font-size: 0.75rem;
   height: 2em;
@@ -153,6 +153,12 @@
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
+  border: 1px solid transparent;
+}
+
+.project-card-footer span.project-tag:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 @media (max-width: 768px) {

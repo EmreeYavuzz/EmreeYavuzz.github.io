@@ -11,19 +11,11 @@ import StyleContext from "../../contexts/StyleContext";
 import LanguageContext from "../../contexts/LanguageContext";
 import {getTranslation} from "../../i18n";
 
-// Resume dosyalarını import et
-import resumeTR from "./resume.pdf";
-import resumeEN from "./resume_eng.pdf";
-
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
   const {language} = useContext(LanguageContext);
   const t = getTranslation(language);
-  
-  // Dile göre resume dosyası ve indirme adı
-  const resumeFile = language === "en" ? resumeEN : resumeTR;
-  const resumeDownloadName = language === "en" ? "Emre_Yavuz_Resume.pdf" : "Emre_Yavuz_CV.pdf";
-  
+
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -52,15 +44,6 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text={t.greeting.contactButton} href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={resumeFile}
-                    download={resumeDownloadName}
-                    className="download-link-button"
-                  >
-                    <Button text={t.greeting.resumeButton} />
-                  </a>
-                )}
               </div>
             </div>
           </div>
