@@ -134,22 +134,22 @@ export const tr = {
       {
         projectName: "FleetRent – Yüksek Eşzamanlı Araç Kiralama ve Rezervasyon Sistemi",
         projectDesc:
-          "React, TypeScript, ASP.NET Core, EF Core ve PostgreSQL kullanarak yüksek eşzamanlılık senaryolarına dayanıklı bir araç kiralama ve rezervasyon sistemi geliştirdim. Sistem; araç listeleme, rezervasyon oluşturma, mock ödeme durumu yönetimi, iptal/iade akışı ve aynı araca aynı zaman aralığında gelen çakışan istekleri backend + PostgreSQL seviyesinde engelleyen transaction tabanlı concurrency kontrolü içeriyor. SELECT FOR UPDATE ile pessimistic locking uygulanarak eş zamanlı iki rezervasyon isteğinden yalnızca birinin başarılı olması, diğerinin anlamlı bir 409 Conflict hatası alması sağlandı."
+          "ASP.NET Core ve PostgreSQL üzerinde yüksek eşzamanlılığa dayanıklı araç kiralama sistemi geliştirdim. Veritabanı seviyesinde SELECT FOR UPDATE ile pessimistic locking uygulayarak çakışan rezervasyon isteklerini engelledim ve concurrency kontrolü sağladım."
       },
       {
         projectName: "Gerçek Zamanlı Bildirim Sistemi",
         projectDesc:
-          "React, TypeScript, Vite, Node.js ve ws kullanarak polling kullanmadan çalışan gerçek zamanlı bir bildirim paneli geliştirdim. Sistem; kalıcı WebSocket bağlantısı, bağlantı durumu göstergesi, exponential backoff ile otomatik reconnect, id bazlı duplicate koruması, okundu/okunmadı yönetimi, okunmamış sayaç ve bağlantı koptuğunda kaçan event’leri geri getiren server-side replay buffer mantığı içeriyor. WebSocket lifecycle yönetimi custom hook içinde ayrıştırılarak UI bileşenleri yalnızca görsel sorumluluk taşıyacak şekilde tasarlandı."
+          "React, Node.js ve WebSocket kullanarak gerçek zamanlı bir bildirim paneli geliştirdim. Exponential backoff otomatik yeniden bağlanma, server-side replay buffer ve lifecycle yönetimini custom hook mimarisiyle tasarladım."
       },
       {
         projectName: "Advanced Identity Auth API",
         projectDesc:
-          "ASP.NET Core Identity, PostgreSQL ve EF Core üzerine kurulu, production odaklı bir kimlik doğrulama API’si geliştirdim. Sistem; JWT tabanlı authentication, role-based authorization, refresh token rotation, access-token blacklisting, login rate limiting, audit logging ve OpenAPI/Scalar dokümantasyonu içeriyor. Güvenli oturum yönetimi, 401/403 ayrımı, token yenileme akışı ve integration test coverage ile gerçek backend senaryolarına uygun şekilde tasarlandı."
+          "ASP.NET Core Identity ve PostgreSQL üzerine kurulu kimlik doğrulama API’si geliştirdim. Sistem; JWT auth, role-based yetki, refresh token rotation, token blacklisting, rate limiting ve OpenAPI/Scalar dokümantasyonunu içeriyor."
       },
       {
         projectName: "Advanced Offline Sync Service API",
         projectDesc:
-          "React Native, Expo Router, TypeScript ve Express kullanarak çevrimdışı çalışabilen bir servis talep uygulaması geliştirdim. Uygulama, internet yokken oluşturulan kayıtları AsyncStorage üzerinde kalıcı olarak saklıyor; bağlantı ve sunucu uygun hale geldiğinde manuel işlem gerektirmeden otomatik senkronizasyon yapıyor. Sync durumları, işlem geçmişi, local notification altyapısı, background sync hazırlığı ve kullanıcı kontrollü conflict resolution akışıyla saha kullanımına uygun bir offline-first mimari tasarlandı."
+          "React Native ve Express kullanarak çevrimdışı çalışabilen (offline-first) bir servis talep uygulaması geliştirdim. AsyncStorage ile verileri yerelde tutup, bağlantı geldiğinde otomatik arka plan senkronizasyonu sağladım."
       },
       {
         projectName: "LLM Tabanlı Siber Güvenlik Olgunluk Değerlendirme Aracı",
