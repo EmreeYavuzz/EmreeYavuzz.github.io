@@ -132,6 +132,26 @@ export const tr = {
     subtitle: "Gerçekleştirdiğim teknik projelerden bazıları",
     projectsList: [
       {
+        projectName: "FleetRent – Yüksek Eşzamanlı Araç Kiralama ve Rezervasyon Sistemi",
+        projectDesc:
+          "React, TypeScript, ASP.NET Core, EF Core ve PostgreSQL kullanarak yüksek eşzamanlılık senaryolarına dayanıklı bir araç kiralama ve rezervasyon sistemi geliştirdim. Sistem; araç listeleme, rezervasyon oluşturma, mock ödeme durumu yönetimi, iptal/iade akışı ve aynı araca aynı zaman aralığında gelen çakışan istekleri backend + PostgreSQL seviyesinde engelleyen transaction tabanlı concurrency kontrolü içeriyor. SELECT FOR UPDATE ile pessimistic locking uygulanarak eş zamanlı iki rezervasyon isteğinden yalnızca birinin başarılı olması, diğerinin anlamlı bir 409 Conflict hatası alması sağlandı."
+      },
+      {
+        projectName: "Gerçek Zamanlı Bildirim Sistemi",
+        projectDesc:
+          "React, TypeScript, Vite, Node.js ve ws kullanarak polling kullanmadan çalışan gerçek zamanlı bir bildirim paneli geliştirdim. Sistem; kalıcı WebSocket bağlantısı, bağlantı durumu göstergesi, exponential backoff ile otomatik reconnect, id bazlı duplicate koruması, okundu/okunmadı yönetimi, okunmamış sayaç ve bağlantı koptuğunda kaçan event’leri geri getiren server-side replay buffer mantığı içeriyor. WebSocket lifecycle yönetimi custom hook içinde ayrıştırılarak UI bileşenleri yalnızca görsel sorumluluk taşıyacak şekilde tasarlandı."
+      },
+      {
+        projectName: "Advanced Identity Auth API",
+        projectDesc:
+          "ASP.NET Core Identity, PostgreSQL ve EF Core üzerine kurulu, production odaklı bir kimlik doğrulama API’si geliştirdim. Sistem; JWT tabanlı authentication, role-based authorization, refresh token rotation, access-token blacklisting, login rate limiting, audit logging ve OpenAPI/Scalar dokümantasyonu içeriyor. Güvenli oturum yönetimi, 401/403 ayrımı, token yenileme akışı ve integration test coverage ile gerçek backend senaryolarına uygun şekilde tasarlandı."
+      },
+      {
+        projectName: "Advanced Offline Sync Service API",
+        projectDesc:
+          "React Native, Expo Router, TypeScript ve Express kullanarak çevrimdışı çalışabilen bir servis talep uygulaması geliştirdim. Uygulama, internet yokken oluşturulan kayıtları AsyncStorage üzerinde kalıcı olarak saklıyor; bağlantı ve sunucu uygun hale geldiğinde manuel işlem gerektirmeden otomatik senkronizasyon yapıyor. Sync durumları, işlem geçmişi, local notification altyapısı, background sync hazırlığı ve kullanıcı kontrollü conflict resolution akışıyla saha kullanımına uygun bir offline-first mimari tasarlandı."
+      },
+      {
         projectName: "LLM Tabanlı Siber Güvenlik Olgunluk Değerlendirme Aracı",
         projectDesc:
           "Kuruluşların siber güvenlik olgunluğunu ölçen yapay zekâ destekli bir değerlendirme aracı geliştirdim. Sistem, kullanıcıya dinamik sorular yönelterek cevapları analiz ediyor, sonraki adımları otomatik belirliyor ve sürecin sonunda görev listesi ile kapsamlı bir rapor üretiyor."

@@ -132,6 +132,26 @@ export const en = {
     subtitle: "Some of the technical projects I've completed",
     projectsList: [
       {
+        projectName: "FleetRent – High-Concurrency Rental Reservation System",
+        projectDesc:
+          "Developed a high-concurrency vehicle rental and reservation system using React, TypeScript, ASP.NET Core, EF Core, and PostgreSQL. The system includes vehicle listing, reservation creation, mock payment status management, cancellation/refund flows, and transaction-based concurrency control that prevents overlapping reservations at the backend and database level. Pessimistic locking with SELECT FOR UPDATE ensures that when two requests target the same vehicle and time range, only one succeeds while the other receives a meaningful 409 Conflict response."
+      },
+      {
+        projectName: "Real-Time Notification System",
+        projectDesc:
+          "Developed a real-time notification panel working without polling using React, TypeScript, Vite, Node.js, and ws. The system features a persistent WebSocket connection, connection status indicator, automatic reconnection with exponential backoff, ID-based duplicate protection, read/unread management, an unread counter, and server-side replay buffer logic to retrieve missed events during disconnections. The WebSocket lifecycle management was abstracted into a custom hook, ensuring that UI components only carry visual responsibilities."
+      },
+      {
+        projectName: "Advanced Identity Auth API",
+        projectDesc:
+          "Developed a production-oriented authentication API built on ASP.NET Core Identity, PostgreSQL, and EF Core. The system includes JWT-based authentication, role-based authorization, refresh token rotation, access-token blacklisting, login rate limiting, audit logging, and OpenAPI/Scalar documentation. It was designed for realistic backend scenarios with secure session management, clear 401/403 handling, token refresh flows, and integration test coverage."
+      },
+      {
+        projectName: "Advanced Offline Sync Service API",
+        projectDesc:
+          "Developed an offline-first service request application using React Native, Expo Router, TypeScript, and Express. The app persists records locally with AsyncStorage when there is no internet connection and automatically synchronizes them once connectivity and server availability are restored. It includes sync status tracking, operation history, local notification infrastructure, background sync preparation, and user-driven conflict resolution for field-oriented offline workflows."
+      },
+      {
         projectName: "LLM-Based Cybersecurity Maturity Assessment Tool",
         projectDesc:
           "Developed an AI-powered assessment tool that evaluates organizational cybersecurity maturity. The system dynamically generates questions, analyzes responses, determines next steps automatically, and produces a comprehensive report with actionable tasks."

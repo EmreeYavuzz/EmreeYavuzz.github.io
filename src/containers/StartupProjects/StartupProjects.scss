@@ -69,7 +69,29 @@
   background: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
 }
 
+.project-card.category-backend::before {
+  background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+}
+
+.project-card.category-frontend::before {
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+}
+
 // Çoklu kategori kombinasyonları
+.project-card.category-fullstack.category-backend.category-systems::before {
+  background: linear-gradient(90deg, #4facfe 0%, #ff9966 50%, #fa709a 100%);
+}
+
+.project-card.category-frontend.category-backend.category-systems::before {
+  background: linear-gradient(90deg, #00c6ff 0%, #ff9966 50%, #fa709a 100%);
+}
+.project-card.category-backend.category-systems::before {
+  background: linear-gradient(90deg, #ff9966 0%, #fa709a 50%, #fee140 100%);
+}
+
+.project-card.category-mobile.category-backend::before {
+  background: linear-gradient(90deg, #30cfd0 0%, #ff9966 50%, #ff5e62 100%);
+}
 .project-card.category-ai.category-fullstack::before {
   background: linear-gradient(90deg, #f093fb 0%, #4facfe 50%, #00f2fe 100%);
 }
@@ -223,4 +245,12 @@
 .category-badge.game {
   background: linear-gradient(90deg, #a8edea 0%, #fed6e3 100%);
   color: #333;
+}
+
+.category-badge.backend {
+  background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+}
+
+.category-badge.frontend {
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
 }

@@ -231,7 +231,44 @@ const bigProjects = {
   title: "Projeler",
   subtitle: "Gerçekleştirdiğim teknik projelerden bazıları",
   projects: [
-
+    {
+      projectName: "FleetRent – High-Concurrency Rental Reservation System",
+      category: ["fullstack", "backend", "systems"],
+      projectDesc:
+        "React, TypeScript, ASP.NET Core, EF Core ve PostgreSQL kullanarak yüksek eşzamanlılık senaryolarına dayanıklı bir araç kiralama ve rezervasyon sistemi geliştirdim. Sistem; araç listeleme, rezervasyon oluşturma, mock ödeme durumu yönetimi, iptal/iade akışı ve aynı araca aynı zaman aralığında gelen çakışan istekleri backend + PostgreSQL seviyesinde engelleyen transaction tabanlı concurrency kontrolü içeriyor. SELECT FOR UPDATE ile pessimistic locking uygulanarak eş zamanlı iki rezervasyon isteğinden yalnızca birinin başarılı olması, diğerinin anlamlı bir 409 Conflict hatası alması sağlandı.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/EmreeYavuzz/High-Concurrency-Rental-Reservation-System" }
+      ]
+    },
+    {
+      projectName: "Real-Time Notification System",
+      category: ["frontend", "backend", "systems"],
+      projectDesc:
+        "React, TypeScript, Vite, Node.js ve ws kullanarak polling kullanmadan çalışan gerçek zamanlı bir bildirim paneli geliştirdim. Sistem; kalıcı WebSocket bağlantısı, bağlantı durumu göstergesi, exponential backoff ile otomatik reconnect, id bazlı duplicate koruması, okundu/okunmadı yönetimi, okunmamış sayaç ve bağlantı koptuğunda kaçan event’leri geri getiren server-side replay buffer mantığı içeriyor. WebSocket lifecycle yönetimi custom hook içinde ayrıştırılarak UI bileşenleri yalnızca görsel sorumluluk taşıyacak şekilde tasarlandı.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/EmreeYavuzz/Realtime-Notification-System" },
+        { name: "Youtube", url: "https://youtu.be/4V7ILFq08FA" }
+      ]
+    },
+    {
+      projectName: "Advanced Identity Auth API",
+      category: ["backend", "systems"],
+      projectDesc:
+        "ASP.NET Core Identity, PostgreSQL ve EF Core üzerine kurulu, production odaklı bir kimlik doğrulama API’si geliştirdim. Sistem; JWT tabanlı authentication, role-based authorization, refresh token rotation, access-token blacklisting, login rate limiting, audit logging ve OpenAPI/Scalar dokümantasyonu içeriyor. Güvenli oturum yönetimi, 401/403 ayrımı, token yenileme akışı ve integration test coverage ile gerçek backend senaryolarına uygun şekilde tasarlandı.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/EmreeYavuzz/Advanced-Identity-Auth-API" }
+      ]
+    },
+    {
+      projectName: "Advanced Offline Sync Service API",
+      category: ["mobile", "backend"],
+      projectDesc:
+        "React Native, Expo Router, TypeScript ve Express kullanarak çevrimdışı çalışabilen bir servis talep uygulaması geliştirdim. Uygulama, internet yokken oluşturulan kayıtları AsyncStorage üzerinde kalıcı olarak saklıyor; bağlantı ve sunucu uygun hale geldiğinde manuel işlem gerektirmeden otomatik senkronizasyon yapıyor. Sync durumları, işlem geçmişi, local notification altyapısı, background sync hazırlığı ve kullanıcı kontrollü conflict resolution akışıyla saha kullanımına uygun bir offline-first mimari tasarlandı.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/EmreeYavuzz/Advanced-Offline-Sync-Service-API" },
+        { name: "Youtube", url: "https://youtu.be/IVtDPGbkX2c" }
+      ]
+    },
     {
       projectName: "LLM Tabanlı Siber Güvenlik Olgunluk Değerlendirme Aracı",
       category: ["ai", "fullstack"],
