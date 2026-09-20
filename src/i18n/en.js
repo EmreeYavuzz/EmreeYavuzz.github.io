@@ -19,7 +19,7 @@ export const en = {
   greeting: {
     title: "Hi, I'm Emre 👋",
     subTitle:
-      "I build end-to-end products across mobile applications, backend services, and real-time systems. My core focus is mobile client development, API design, reliable data flow, and operationally sustainable systems.",
+      "I work on software verification and test automation for embedded and avionics systems while continuing to build SıraTaksi as a co-founder. My experience spans Python-based test automation, communication protocols, real-time systems, and backend/mobile product development.",
     resumeButton: "Download Resume",
     contactButton: "Contact Me"
   },
@@ -28,17 +28,15 @@ export const en = {
   skills: {
     title: "What I Do",
     subTitle:
-      "I build production-ready mobile and backend solutions focused on reliability, scalability, and real users.",
+      "I verify embedded software and build reliable automation while continuing to develop production-ready products.",
     skillsList: [
-      "⚡ Mobile Development with Flutter: scalable UI architecture and maintainable app structure",
-      "⚡ Backend Development with Node.js/Express: REST APIs, validation, authorization, and service-layer design",
-      "⚡ MongoDB-Centric Data Design: indexing, query optimization, and consistency in concurrent operations",
-      "⚡ Real-Time Data Flows: queue management patterns and robust mobile-backend integration",
-      "⚡ CI/CD and Container Delivery: Docker-based deployment pipelines with automated testing",
-      "⚡ Production Observability: MongoDB metrics, Grafana dashboards, logs, and trace-friendly monitoring",
-      "⚡ Firebase Integrations: notifications, auth, and real-time service integrations",
-      "⚡ Tailscale Networking: secure service access across development and deployment environments",
-      "⚡ System Integration: Building end-to-end solutions by combining different technologies"
+      "⚡ Requirement-based software verification, test procedure development, and result analysis",
+      "⚡ Python-based test automation, regression testing, and integration testing",
+      "⚡ Embedded Linux and real-time/embedded systems on FPGA and ARM SoC platforms",
+      "⚡ RS-232/RS-422, CAN, Ethernet, and ICD-based communication testing",
+      "⚡ Linux, Wireshark, log analysis, and source-level debugging for root-cause investigation",
+      "⚡ Backend and mobile product development with Node.js, MongoDB, and Flutter",
+      "⚡ CI/CD, containerized delivery, release management, and production deployment"
     ]
   },
 
@@ -86,16 +84,26 @@ export const en = {
     internshipTitle: "Internship Experience",
     workItems: [
       {
-        role: "Mobile & Backend Developer",
-        company: "SyncTaxi",
-        date: "2025 – Present",
-        desc: "Contributed to a real-time taxi queue platform across mobile app, backend APIs, and operator-facing workflows.",
+        role: "Software Test Engineer",
+        company: "ASELSAN (via BİTES) — MEOS",
+        date: "June 2026 – Present",
+        desc: "Working through BİTES within ASELSAN MEOS on requirement-based verification and testing of embedded and avionics software.",
         descBullets: [
-          "Developed Node.js/Express + MongoDB services for driver queue flow, reservations, and role-based access.",
-          "Implemented concurrency-safe queue operations using lock/atomic-operation approaches under high traffic.",
-          "Improved Flutter mobile flows for real-time queue tracking and synchronized app behavior with backend services.",
-          "Contributed to Google Play testing, release readiness checks, and production rollout support.",
-          "Supported CI/CD stages including build, test, container publish, and controlled deployments."
+          "Develop and maintain Python-based automated tests and execute regression and integration testing.",
+          "Verify RS-232/422, CAN and Ethernet communication interfaces and ICD-defined messages.",
+          "Analyze test and communication issues using Linux, Wireshark, logs and source-code inspection when required."
+        ]
+      },
+      {
+        role: "Co-Founder & Software Developer (Part-time)",
+        company: "SıraTaksi",
+        date: "September 2025 – Present",
+        website: "https://sirataksi.com/",
+        desc: "Co-founder of SıraTaksi, a taxi stand management platform providing live queue tracking, driver availability, reservations and notifications.",
+        descBullets: [
+          "Contribute across backend services, mobile application and operational workflows.",
+          "Work on real-time queue and reservation flows using Node.js/Express, MongoDB and Flutter.",
+          "Contribute to CI/CD, testing, release and production deployment processes."
         ]
       }
     ],

@@ -44,6 +44,11 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text={t.greeting.contactButton} href="#contact" />
+                <Button
+                  text={t.greeting.resumeButton}
+                  href="/resume.pdf"
+                  newTab={true}
+                />
               </div>
             </div>
           </div>

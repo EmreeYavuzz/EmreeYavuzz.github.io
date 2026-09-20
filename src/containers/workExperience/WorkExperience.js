@@ -35,6 +35,7 @@ export default function WorkExperience() {
                   companylogo: logos?.[i]?.companylogo,
                   bannerColor: logos?.[i]?.bannerColor,
                   role: card.role,
+                  website: card.website,
                   descBullets: card.descBullets
                 }}
               />

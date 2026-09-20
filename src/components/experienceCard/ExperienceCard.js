@@ -43,7 +43,19 @@ export default function ExperienceCard({cardInfo, isDark}) {
       <div style={bannerStyle} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+          <h5 className="experience-text-company">
+            {cardInfo.website ? (
+              <a
+                href={cardInfo.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {cardInfo.company}
+              </a>
+            ) : (
+              cardInfo.company
+            )}
+          </h5>
         </div>
 
         <img

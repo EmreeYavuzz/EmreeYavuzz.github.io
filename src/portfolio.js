@@ -31,7 +31,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/Rlueer",
+  github: "https://github.com/EmreeYavuzz",
   linkedin: "https://www.linkedin.com/in/emre-yavuz-4b849a18b",
   gmail: "emreyavuzz2001@gmail.com",
   instagram: "https://www.instagram.com/mr_yvz01/",
@@ -94,16 +94,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
+      skillName: "Embedded Linux",
+      fontAwesomeClassname: "fab fa-linux"
     },
     {
       skillName: "Dart / Flutter",
       fontAwesomeClassname: "fas fa-mobile-alt"
     },
     {
-      skillName: "Linux",
-      fontAwesomeClassname: "fab fa-linux"
+      skillName: "Test Automation",
+      fontAwesomeClassname: "fas fa-vial"
     },
     {
       skillName: "Git",
@@ -114,8 +114,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "CI/CD",
-      fontAwesomeClassname: "fas fa-sync-alt"
+      skillName: "Wireshark",
+      fontAwesomeClassname: "fas fa-search"
     },
     {
       skillName: "Node.js",
@@ -126,20 +126,28 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-leaf"
     },
     {
-      skillName: "Grafana",
-      fontAwesomeClassname: "fas fa-chart-line"
+      skillName: "CAN",
+      fontAwesomeClassname: "fas fa-microchip"
     },
     {
-      skillName: "Firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "RS-232 / RS-422",
+      fontAwesomeClassname: "fas fa-exchange-alt"
     },
     {
-      skillName: "Tailscale",
+      skillName: "Ethernet",
       fontAwesomeClassname: "fas fa-network-wired"
     },
     {
-      skillName: "PostgreSQL",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "FPGA / ARM SoC",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "Requirement-Based Testing",
+      fontAwesomeClassname: "fas fa-clipboard-check"
+    },
+    {
+      skillName: "CI/CD",
+      fontAwesomeClassname: "fas fa-sync-alt"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -202,6 +210,10 @@ const techStack = {
 const workExperiences = {
   display: true,
   work: [
+    {
+      companylogo: require("./assets/images/bites.png"),
+      bannerColor: "#0b3954"
+    },
     {
       companylogo: require("./assets/images/synctaxi-logo.png"),
       bannerColor: "#f5c400"

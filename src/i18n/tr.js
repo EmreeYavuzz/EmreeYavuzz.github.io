@@ -19,7 +19,7 @@ export const tr = {
   greeting: {
     title: "Merhaba, ben Emre 👋",
     subTitle:
-      "Mobil uygulamalar, backend servisler ve gerçek zamanlı sistemler üzerinde uçtan uca ürünler geliştiriyorum. Özellikle mobil istemci, API tasarımı, veri akışı ve operasyonel olarak sürdürülebilir sistemler kurmaya odaklanıyorum.",
+      "Gömülü ve aviyonik sistemlerde yazılım doğrulama ve test otomasyonu üzerine çalışırken, SıraTaksi'nin kurucu ekibinde ürün geliştirmeye devam ediyorum. Deneyimim Python tabanlı test otomasyonu, haberleşme protokolleri, gerçek zamanlı sistemler ve backend/mobil geliştirmeyi kapsıyor.",
     resumeButton: "Özgeçmişimi İncele",
     contactButton: "İletişime Geç"
   },
@@ -28,17 +28,15 @@ export const tr = {
   skills: {
     title: "Neler yapıyorum",
     subTitle:
-      "Mobil ve backend odaklı, üretime çıkabilen ve gerçek kullanıcıya dokunan uygulamalar geliştiriyorum.",
+      "Gömülü yazılımları doğruluyor, güvenilir test otomasyonları geliştiriyor ve üretime hazır ürünler geliştirmeye devam ediyorum.",
     skillsList: [
-      "⚡ Flutter ile mobil uygulama geliştirme, ölçeklenebilir ekran mimarisi ve sürdürülebilir kod yapısı",
-      "⚡ Node.js/Express ile RESTful API geliştirme, doğrulama, yetkilendirme ve servis katmanı tasarımı",
-      "⚡ MongoDB odaklı veri modelleme, sorgu optimizasyonu ve eş zamanlı işlem senaryolarında tutarlılık",
-      "⚡ Gerçek zamanlı veri akışı, kuyruk yönetimi ve mobil-backend entegrasyonu",
-      "⚡ CI/CD süreçleri, Docker tabanlı dağıtım ve otomatik test odaklı geliştirme",
-      "⚡ Üretim izleme: MongoDB metrikleri, Grafana panelleri, loglama ve hata ayıklama odaklı gözlemlenebilirlik",
-      "⚡ Firebase ile bildirim/kimlik/gerçek zamanlı veri ihtiyaçlarına yönelik servis entegrasyonları",
-      "⚡ Tailscale ile güvenli servis erişimi ve geliştirme/dağıtım ortamları arasında güvenli ağ bağlantısı",
-      "⚡ Farklı teknolojileri bir araya getirerek uçtan uca çalışan sistemler tasarlama"
+      "⚡ Gereksinim bazlı yazılım doğrulama, test prosedürü geliştirme ve sonuç analizi",
+      "⚡ Python tabanlı test otomasyonu, regresyon ve entegrasyon testleri",
+      "⚡ FPGA ve ARM SoC platformlarında Embedded Linux ve gerçek zamanlı/gömülü sistemler",
+      "⚡ RS-232/RS-422, CAN, Ethernet ve ICD tabanlı haberleşme testleri",
+      "⚡ Kök neden analizi için Linux, Wireshark, log analizi ve kaynak kod seviyesinde hata ayıklama",
+      "⚡ Node.js, MongoDB ve Flutter ile backend ve mobil ürün geliştirme",
+      "⚡ CI/CD, container tabanlı teslimat, sürüm yönetimi ve production deployment"
     ]
   },
 
@@ -86,16 +84,26 @@ export const tr = {
     internshipTitle: "Staj Tecrübeleri",
     workItems: [
       {
-        role: "Mobil & Backend Geliştirici",
-        company: "SyncTaxi",
-        date: "2025 – Devam Ediyor",
-        desc: "Gerçek zamanlı taksi sıra yönetim platformunda mobil uygulama, backend API ve operasyon paneli taraflarında geliştirme yaptım.",
+        role: "Yazılım Test Mühendisi",
+        company: "ASELSAN (BİTES üzerinden) — MEOS",
+        date: "Haziran 2026 – Devam Ediyor",
+        desc: "ASELSAN MEOS bünyesinde, BİTES üzerinden gömülü ve aviyonik yazılımların gereksinim bazlı doğrulama ve test faaliyetlerinde çalışıyorum.",
         descBullets: [
-          "Node.js/Express ve MongoDB ile sürücü sırası, rezervasyon ve rol bazlı erişim için API servisleri geliştirdim.",
-          "Yük altında tutarlılık için kuyruk işlemlerinde yarış durumlarını azaltan kilit/atomik işlem yaklaşımını uyguladım.",
-          "Flutter mobil istemcide gerçek zamanlı sıra takibi ve kullanıcı akışlarını backend ile uyumlu hale getirdim.",
-          "Google Play test, sürüm doğrulama ve release süreçlerinde yayın öncesi kalite adımlarına katkı sağladım.",
-          "CI/CD hattında build, test, container publish ve güvenli deployment adımlarına katkı sağladım."
+          "Python tabanlı otomatik testler geliştiriyor, mevcut test altyapısında regresyon ve entegrasyon testleri yürütüyorum.",
+          "RS-232/422, CAN ve Ethernet tabanlı haberleşme arayüzleri ile ICD mesajlarının doğrulamasını gerçekleştiriyorum.",
+          "Linux, Wireshark, log analizi ve gerektiğinde kaynak kod incelemesi kullanarak test ve haberleşme problemlerini analiz ediyorum."
+        ]
+      },
+      {
+        role: "Kurucu Ortak & Yazılım Geliştirici (Part-time)",
+        company: "SıraTaksi",
+        date: "Eylül 2025 – Devam Ediyor",
+        website: "https://sirataksi.com/",
+        desc: "Taksi durakları için canlı sıra, sürücü durumu, rezervasyon ve bildirim yönetimi sağlayan SıraTaksi platformunun kurucu ekibinde ürün geliştirmeye devam ediyorum.",
+        descBullets: [
+          "Backend servisleri, mobil uygulama ve operasyon akışlarının geliştirilmesinde aktif rol alıyorum.",
+          "Node.js/Express, MongoDB ve Flutter tabanlı sistemde gerçek zamanlı sıra ve rezervasyon süreçleri üzerinde çalışıyorum.",
+          "CI/CD, sürüm, test ve production deployment süreçlerine katkı sağlıyorum."
         ]
       }
     ],

@@ -109,6 +109,11 @@
   white-space: nowrap;
 }
 
+.experience-text-company a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .experience-roundedimg {
   position: absolute;
   object-fit: cover;
