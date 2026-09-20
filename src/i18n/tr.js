@@ -19,7 +19,7 @@ export const tr = {
   greeting: {
     title: "Merhaba, ben Emre 👋",
     subTitle:
-      "ASELSAN MEOS'ta gömülü ve aviyonik yazılımların doğrulama ve test süreçlerinde görev alıyorum. Aynı zamanda, kurucu ortaklarından olduğum SıraTaksi'de part-time full-stack geliştirici olarak ürünün teknik gelişimini sürdürüyorum.",
+      "Gömülü ve gerçek zamanlı sistemlerde gereksinim bazlı yazılım doğrulama, test geliştirme ve test otomasyonu üzerine çalışan bir bilgisayar mühendisiyim. Aynı zamanda SıraTaksi'nin kurucu ekibinde backend servisleri, mobil uygulama ve sistem entegrasyonu üzerinde çalışarak ürün geliştirmeye devam ediyorum.",
     contactButton: "İletişime Geç"
   },
 
@@ -28,12 +28,12 @@ export const tr = {
     title: "Neler Kullanıyorum",
     subTitle: "",
     skillsList: [
-      "⚡ IBM DOORS üzerinden gereksinim inceleme ve gereksinimlerle izlenebilir test senaryoları hazırlama",
-      "⚡ Python tabanlı test otomasyonu, regresyon ve entegrasyon testleri",
-      "⚡ Linux tabanlı rehost ortamlarında test, paylaşımlı bellek (shared memory) ve iç sistem durumu incelemeleri",
-      "⚡ FPGA ve ARM SoC platformlarında Embedded Linux ve gerçek zamanlı/gömülü sistemler",
-      "⚡ RS-232/RS-422, CAN, Ethernet ve ICD tabanlı haberleşme testleri",
-      "⚡ Haberleşme ve entegrasyon sorunlarını Linux araçları, Wireshark, uygulama logları ve kaynak kod incelemesiyle analiz etme",
+      "⚡ Yazılım gereksinimlerini analiz ederek gereksinim bazlı test senaryoları ve prosedürleri hazırlama",
+      "⚡ Python ile fonksiyonel, regresyon ve entegrasyon test otomasyonu geliştirme",
+      "⚡ C++ gömülü yazılımları Linux tabanlı rehost ortamlarında çalıştırma ve doğrulama",
+      "⚡ Shared memory tabanlı veri paylaşımı ve veri akışlarını gereksinimlere göre doğrulama",
+      "⚡ RS-232/RS-422, CAN, Ethernet ve ICD tanımlı mesajlar üzerinde haberleşme testleri",
+      "⚡ Wireshark, loglar ve kaynak kod incelemesiyle root cause analizi yapma",
       "⚡ Node.js, MongoDB ve Flutter ile full-stack ürün geliştirme",
       "⚡ CI/CD, konteyner tabanlı teslimat, sürüm yönetimi ve canlı ortam dağıtımı"
     ]
@@ -84,16 +84,18 @@ export const tr = {
     workItems: [
       {
         role: "Gömülü Yazılım Test Mühendisi",
-        company: "ASELSAN-MEOS",
-        date: "Haziran 2026 – Devam Ediyor",
-        desc: "ASELSAN MEOS bünyesinde gömülü ve aviyonik yazılımların gereksinim bazlı doğrulama ve test faaliyetlerinde çalışıyorum.",
+        company: "ASELSAN MEOS (BİTES üzerinden)",
+        date: "06/2026 – Hâlen",
+        desc: "ASELSAN MEOS bünyesinde gömülü ve gerçek zamanlı yazılımların gereksinim bazlı doğrulama, test geliştirme ve test otomasyonu faaliyetlerinde çalışıyorum.",
         descBullets: [
-          "DO-178C doğrultusundaki gereksinim bazlı doğrulama yaklaşımını izliyor; IBM DOORS üzerinden gereksinimleri gözden geçiriyor, gereksinimlerle izlenebilir test senaryoları ve prosedürleri hazırlıyorum.",
-          "Python ve projenin UTS altyapısıyla otomatik testler geliştiriyor; regresyon, entegrasyon, komut/yanıt ve test sonucu doğrulama çalışmalarını yürütüyorum.",
-          "Linux tabanlı rehost ortamlarında testler gerçekleştiriyor; paylaşımlı bellek (shared memory) alanlarını, iç sistem durumlarını ve düşük seviyeli yazılım davranışlarını inceliyorum.",
-          "RS-232/RS-422, CAN ve Ethernet arayüzleri ile ICD mesajlarını; ikili mesaj yapısı, veri alanları, bayt sıralaması (endianness) ve CRC/checksum kontrolleri dahil olmak üzere doğruluyorum.",
-          "Haberleşme ve entegrasyon sorunlarını Wireshark, Linux araçları, uygulama logları ve gerektiğinde kaynak kod incelemesiyle analiz ederek kök neden çalışmalarına destek veriyorum.",
-          "Test sonuçlarını değerlendiriyor; doğrulama kayıtları, test raporları ve ilgili teknik dokümanların hazırlanmasına katkı sağlıyorum."
+          "Yazılım gereksinimlerini analiz ederek gereksinim bazlı test senaryoları ve prosedürleri hazırlıyor, doğrulama faaliyetleri yürütüyorum.",
+          "Python tabanlı test otomasyonu geliştirerek fonksiyonel, regresyon ve entegrasyon testlerinin yürütülmesini sağlıyorum.",
+          "RS-232/RS-422, CAN ve Ethernet arayüzleri ile ICD tanımlı mesajların gönderim, alım ve veri doğrulama testlerini gerçekleştiriyorum.",
+          "Gömülü sistemlerde shared memory tabanlı veri paylaşımı ve veri akışlarının gereksinimlere uygunluğunu doğruluyorum.",
+          "C++ ile geliştirilen gömülü yazılımların, hedef donanım bulunmadığında rehost test ortamlarında çalıştırılması ve davranışlarının doğrulanması süreçlerinde görev alıyorum.",
+          "Linux tabanlı sanal makineler ve test ortamları üzerinde test altyapısının kurulumu ve çalıştırılması süreçlerinde görev alıyorum.",
+          "Wireshark, log analizi ve kaynak kod incelemesi kullanarak haberleşme ve yazılım problemlerinin root cause analizlerini yapıyorum.",
+          "Test sonuçlarını ilgili gereksinimlerle ilişkilendirerek V&V, requirement traceability ve hata raporlama süreçlerine katkı sağlıyorum."
         ]
       },
       {

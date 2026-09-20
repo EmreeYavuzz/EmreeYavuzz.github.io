@@ -19,7 +19,7 @@ export const en = {
   greeting: {
     title: "Hi, I'm Emre 👋",
     subTitle:
-      "I work on embedded and avionics software verification and testing at ASELSAN MEOS. At the same time, I continue the technical development of SıraTaksi as a co-founder and part-time full-stack developer.",
+      "I am a computer engineer working on requirements-based software verification, test development, and test automation for embedded and real-time systems. I also continue building SıraTaksi as part of its founding team, working across backend services, the mobile application, and system integration.",
     contactButton: "Contact Me"
   },
 
@@ -28,12 +28,12 @@ export const en = {
     title: "What I Use",
     subTitle: "",
     skillsList: [
-      "⚡ Requirements review in IBM DOORS and preparation of traceable tests based on software requirements",
-      "⚡ Python-based test automation, regression testing, and integration testing",
-      "⚡ Testing in Linux-based rehost environments, shared memory inspection, and internal state analysis",
-      "⚡ Embedded Linux and real-time/embedded systems on FPGA and ARM SoC platforms",
-      "⚡ RS-232/RS-422, CAN, Ethernet, and ICD-based communication testing",
-      "⚡ Analysis of communication and integration issues using Linux tools, Wireshark, application logs, and source-code inspection",
+      "⚡ Software requirements analysis and preparation of requirements-based test scenarios and procedures",
+      "⚡ Python automation for functional, regression, and integration testing",
+      "⚡ Execution and verification of C++ embedded software in Linux-based rehost environments",
+      "⚡ Requirements-based verification of shared-memory data exchange and data flows",
+      "⚡ Communication testing over RS-232/RS-422, CAN, Ethernet, and ICD-defined messages",
+      "⚡ Root-cause analysis using Wireshark, logs, and source-code inspection",
       "⚡ Full-stack product development with Node.js, MongoDB, and Flutter",
       "⚡ CI/CD, containerized delivery, release management, and production deployment"
     ]
@@ -84,16 +84,18 @@ export const en = {
     workItems: [
       {
         role: "Embedded Software Test Engineer",
-        company: "ASELSAN-MEOS",
-        date: "June 2026 – Present",
-        desc: "Working within ASELSAN MEOS on requirement-based verification and testing of embedded and avionics software.",
+        company: "ASELSAN MEOS (via BİTES)",
+        date: "06/2026 – Present",
+        desc: "Working within ASELSAN MEOS on requirements-based verification, test development, and test automation for embedded and real-time software.",
         descBullets: [
-          "Follow a DO-178C-aligned requirements-based verification approach; review requirements in IBM DOORS and prepare traceable test scenarios and procedures from those requirements.",
-          "Develop automated tests with Python and the project's UTS infrastructure, covering regression, integration, command/response, and test-result verification activities.",
-          "Execute tests in Linux-based rehost environments and inspect shared memory, internal system states, and low-level software behavior.",
-          "Verify RS-232/RS-422, CAN, and Ethernet interfaces and ICD-defined messages, including binary layouts, data fields, endianness, and CRC/checksum controls.",
-          "Analyze communication and integration issues using Wireshark, Linux tools, application logs, and source-code inspection when needed, supporting root-cause investigations.",
-          "Evaluate test results and contribute to verification records, test reports, and related technical documentation."
+          "Analyze software requirements, prepare requirements-based test scenarios and procedures, and carry out verification activities.",
+          "Develop Python-based test automation for functional, regression, and integration testing.",
+          "Perform transmission, reception, and data-validation tests for ICD-defined messages over RS-232/RS-422, CAN, and Ethernet interfaces.",
+          "Verify that shared-memory data exchange and data flows in embedded systems comply with their requirements.",
+          "Run C++ embedded software in rehost test environments when target hardware is unavailable and verify its behavior.",
+          "Set up and operate test infrastructure on Linux-based virtual machines and test environments.",
+          "Perform root-cause analysis of communication and software issues using Wireshark, log analysis, and source-code inspection.",
+          "Link test results to the relevant requirements and contribute to V&V, requirements traceability, and defect-reporting processes."
         ]
       },
       {
