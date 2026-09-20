@@ -19,24 +19,23 @@ export const tr = {
   greeting: {
     title: "Merhaba, ben Emre 👋",
     subTitle:
-      "Gömülü ve aviyonik sistemlerde yazılım doğrulama ve test otomasyonu üzerine çalışırken, SıraTaksi'nin kurucu ekibinde ürün geliştirmeye devam ediyorum. Deneyimim Python tabanlı test otomasyonu, haberleşme protokolleri, gerçek zamanlı sistemler ve backend/mobil geliştirmeyi kapsıyor.",
-    resumeButton: "Özgeçmişimi İncele",
+      "ASELSAN MEOS'ta gömülü ve aviyonik yazılımların doğrulama ve test süreçlerinde görev alıyorum. Aynı zamanda, kurucu ortaklarından olduğum SıraTaksi'de part-time full-stack geliştirici olarak ürünün teknik gelişimini sürdürüyorum.",
     contactButton: "İletişime Geç"
   },
 
   // Skills Section
   skills: {
-    title: "Neler yapıyorum",
-    subTitle:
-      "Gömülü yazılımları doğruluyor, güvenilir test otomasyonları geliştiriyor ve üretime hazır ürünler geliştirmeye devam ediyorum.",
+    title: "Neler Kullanıyorum",
+    subTitle: "",
     skillsList: [
-      "⚡ Gereksinim bazlı yazılım doğrulama, test prosedürü geliştirme ve sonuç analizi",
+      "⚡ IBM DOORS üzerinden gereksinim inceleme ve gereksinimlerle izlenebilir test senaryoları hazırlama",
       "⚡ Python tabanlı test otomasyonu, regresyon ve entegrasyon testleri",
+      "⚡ Linux tabanlı rehost ortamlarında test, paylaşımlı bellek (shared memory) ve iç sistem durumu incelemeleri",
       "⚡ FPGA ve ARM SoC platformlarında Embedded Linux ve gerçek zamanlı/gömülü sistemler",
       "⚡ RS-232/RS-422, CAN, Ethernet ve ICD tabanlı haberleşme testleri",
-      "⚡ Kök neden analizi için Linux, Wireshark, log analizi ve kaynak kod seviyesinde hata ayıklama",
-      "⚡ Node.js, MongoDB ve Flutter ile backend ve mobil ürün geliştirme",
-      "⚡ CI/CD, container tabanlı teslimat, sürüm yönetimi ve production deployment"
+      "⚡ Haberleşme ve entegrasyon sorunlarını Linux araçları, Wireshark, uygulama logları ve kaynak kod incelemesiyle analiz etme",
+      "⚡ Node.js, MongoDB ve Flutter ile full-stack ürün geliştirme",
+      "⚡ CI/CD, konteyner tabanlı teslimat, sürüm yönetimi ve canlı ortam dağıtımı"
     ]
   },
 
@@ -84,14 +83,17 @@ export const tr = {
     internshipTitle: "Staj Tecrübeleri",
     workItems: [
       {
-        role: "Yazılım Test Mühendisi",
-        company: "ASELSAN (BİTES üzerinden) — MEOS",
+        role: "Gömülü Yazılım Test Mühendisi",
+        company: "ASELSAN-MEOS",
         date: "Haziran 2026 – Devam Ediyor",
-        desc: "ASELSAN MEOS bünyesinde, BİTES üzerinden gömülü ve aviyonik yazılımların gereksinim bazlı doğrulama ve test faaliyetlerinde çalışıyorum.",
+        desc: "ASELSAN MEOS bünyesinde gömülü ve aviyonik yazılımların gereksinim bazlı doğrulama ve test faaliyetlerinde çalışıyorum.",
         descBullets: [
-          "Python tabanlı otomatik testler geliştiriyor, mevcut test altyapısında regresyon ve entegrasyon testleri yürütüyorum.",
-          "RS-232/422, CAN ve Ethernet tabanlı haberleşme arayüzleri ile ICD mesajlarının doğrulamasını gerçekleştiriyorum.",
-          "Linux, Wireshark, log analizi ve gerektiğinde kaynak kod incelemesi kullanarak test ve haberleşme problemlerini analiz ediyorum."
+          "DO-178C doğrultusundaki gereksinim bazlı doğrulama yaklaşımını izliyor; IBM DOORS üzerinden gereksinimleri gözden geçiriyor, gereksinimlerle izlenebilir test senaryoları ve prosedürleri hazırlıyorum.",
+          "Python ve projenin UTS altyapısıyla otomatik testler geliştiriyor; regresyon, entegrasyon, komut/yanıt ve test sonucu doğrulama çalışmalarını yürütüyorum.",
+          "Linux tabanlı rehost ortamlarında testler gerçekleştiriyor; paylaşımlı bellek (shared memory) alanlarını, iç sistem durumlarını ve düşük seviyeli yazılım davranışlarını inceliyorum.",
+          "RS-232/RS-422, CAN ve Ethernet arayüzleri ile ICD mesajlarını; ikili mesaj yapısı, veri alanları, bayt sıralaması (endianness) ve CRC/checksum kontrolleri dahil olmak üzere doğruluyorum.",
+          "Haberleşme ve entegrasyon sorunlarını Wireshark, Linux araçları, uygulama logları ve gerektiğinde kaynak kod incelemesiyle analiz ederek kök neden çalışmalarına destek veriyorum.",
+          "Test sonuçlarını değerlendiriyor; doğrulama kayıtları, test raporları ve ilgili teknik dokümanların hazırlanmasına katkı sağlıyorum."
         ]
       },
       {
@@ -99,17 +101,20 @@ export const tr = {
         company: "SıraTaksi",
         date: "Eylül 2025 – Devam Ediyor",
         website: "https://sirataksi.com/",
-        desc: "Taksi durakları için canlı sıra, sürücü durumu, rezervasyon ve bildirim yönetimi sağlayan SıraTaksi platformunun kurucu ekibinde ürün geliştirmeye devam ediyorum.",
+        websiteLabel: "sirataksi.com",
+        desc: "Kurucu ortaklarından biri olduğum SıraTaksi'de, taksi duraklarının canlı sıra, sürücü uygunluğu, rezervasyon ve bildirim süreçlerini tek platformdan yönetmesini sağlayan ürünün geliştirilmesine part-time devam ediyorum.",
         descBullets: [
-          "Backend servisleri, mobil uygulama ve operasyon akışlarının geliştirilmesinde aktif rol alıyorum.",
-          "Node.js/Express, MongoDB ve Flutter tabanlı sistemde gerçek zamanlı sıra ve rezervasyon süreçleri üzerinde çalışıyorum.",
-          "CI/CD, sürüm, test ve production deployment süreçlerine katkı sağlıyorum."
+          "Node.js/Express ve MongoDB tabanlı backend servislerinde sıra yönetimi, rezervasyon, üyelik, rol bazlı yetkilendirme ve bildirim akışlarını geliştiriyorum.",
+          "Flutter mobil uygulamada sürücülerin gerçek zamanlı sıra takibi, durak işlemleri, rezervasyonları ve bildirimleri için kullanılan kullanıcı akışları üzerinde çalışıyorum.",
+          "Eş zamanlı işlemlerde veri tutarlılığını koruyan kuyruk operasyonları ile mobil uygulama ve backend arasındaki senkronizasyonu geliştiriyorum.",
+          "Ürün planlama, operasyon paneli ve taksi durağı ihtiyaçlarının teknik çözümlere dönüştürülmesi süreçlerinde aktif rol alıyorum.",
+          "CI/CD, otomatik test, konteyner imajı yayınlama, sürüm hazırlığı ve canlı ortam dağıtımı süreçlerine katkı sağlıyorum."
         ]
       }
     ],
     internshipItems: [
       {
-        role: "Mobil Uygulama / Haberleşme Stajyeri",
+        role: "Full-Stack Yazılım Geliştirme Stajyeri",
         company: "ORTEM Electronics",
         date: "Ocak 2025 – Şubat 2025",
         desc: "Android tarafında USB-Serial portu üzerinden CAN verilerini okuyabilen Flutter tabanlı bir haberleşme uygulaması geliştirdim.",
@@ -121,13 +126,13 @@ export const tr = {
         ]
       },
       {
-        role: "FPGA Tasarım Stajyeri",
+        role: "Gömülü Sistemler Stajyeri",
         company: "TÜBİTAK BİLGEM",
         date: "Temmuz 2025 – Ağustos 2025",
         desc: "VHDL ve Vivado kullanarak ölçeklenebilir dijital mimariler tasarladım; durum makineleri ve otomatik testbench'ler geliştirdim.",
         descBullets: [
           "Oversampling ve metastabilite koruması uygulayarak güvenilir gerçek zamanlı veri aktarımı sağlayan UART modülü oluşturdum.",
-          "Modülü AXI4-Lite üzerinden MicroBlaze tabanlı gömülü sisteme entegre ederek donanım-yazılım bütünleşmesini tamamladım.",
+          "VHDL dilinde donanım tanımlama, sentez ve uygulama süreçlerinde deneyim kazanarak geliştirdiğim tasarımları FPGA kartı üzerinde çalıştırdım ve doğruladım.",
           "Gömülü ortamlarda hata toleransını artırmak ve sürdürülebilirliği geliştirmek için uçtan uca veri işleme hatlarını optimize ettim."
         ]
       }
@@ -138,6 +143,18 @@ export const tr = {
   projects: {
     title: "Projeler",
     subtitle: "Gerçekleştirdiğim teknik projelerden bazıları",
+    filterAll: "Tümü",
+    categoryLabels: {
+      fullstack: "Full Stack",
+      frontend: "Frontend",
+      backend: "Backend",
+      mobile: "Mobil",
+      systems: "Sistemler",
+      embedded: "Gömülü",
+      ai: "Yapay Zekâ",
+      game: "Oyun",
+      web: "Web"
+    },
     projectsList: [
       {
         projectName: "FleetRent – Yüksek Eşzamanlı Araç Kiralama ve Rezervasyon Sistemi",
@@ -237,11 +254,5 @@ export const tr = {
   openSourceProjects: {
     title: "Açık Kaynak Projeler",
     moreProjects: "Daha Fazla Proje"
-  },
-
-  // Footer
-  footer: {
-    madeWith: "❤️ ile yapıldı",
-    by: "Emre Yavuz tarafından"
   }
 };

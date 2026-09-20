@@ -149,6 +149,19 @@
   font-weight: 600;
 }
 
+.experience-website-link {
+  display: block;
+  width: fit-content;
+  margin: 0.6rem auto 0;
+  color: $buttonColor;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.experience-website-link:hover {
+  text-decoration: underline;
+}
+
 .experience-text-desc {
   text-align: center;
 }

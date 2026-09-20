@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -7,10 +7,6 @@ import LanguageContext from "../../contexts/LanguageContext";
 import {getTranslation} from "../../i18n";
 
 export default function StartupProject() {
-  const categoryLabelMap = {
-    fullstack: "full stack"
-  };
-
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -22,7 +18,30 @@ export default function StartupProject() {
   const {isDark} = useContext(StyleContext);
   const {language} = useContext(LanguageContext);
   const t = getTranslation(language);
-  
+  const [activeCategory, setActiveCategory] = useState("all");
+  const categories = Array.from(
+    new Set(
+      bigProjects.projects
+        .filter(project => project.display !== false)
+        .flatMap(project =>
+          Array.isArray(project.category)
+            ? project.category
+            : [project.category]
+        )
+    )
+  ).filter(Boolean);
+  const visibleProjects = bigProjects.projects
+    .map((project, index) => ({project, index}))
+    .filter(
+      ({project}) =>
+        project.display !== false &&
+        (activeCategory === "all" ||
+          (Array.isArray(project.category)
+            ? project.category
+            : [project.category]
+          ).includes(activeCategory))
+    );
+
   if (!bigProjects.display) {
     return null;
   }
@@ -41,14 +60,32 @@ export default function StartupProject() {
             {t.projects.subtitle}
           </p>
 
+          <div className="project-filters" aria-label={t.projects.title}>
+            {["all", ...categories].map(category => (
+              <button
+                key={category}
+                type="button"
+                className={`project-filter-button ${
+                  activeCategory === category ? "active" : ""
+                }`}
+                aria-pressed={activeCategory === category}
+                onClick={() => setActiveCategory(category)}
+              >
+                {category === "all"
+                  ? t.projects.filterAll
+                  : t.projects.categoryLabels?.[category] || category}
+              </button>
+            ))}
+          </div>
+
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
-              const translatedProject = t.projects.projectsList[i] || {};
+            {visibleProjects.map(({project, index}) => {
+              const translatedProject = t.projects.projectsList[index] || {};
               const categories = Array.isArray(project.category) ? project.category : [project.category];
               const categoryClasses = categories.map(cat => `category-${cat}`).join(' ');
               return (
                 <div
-                  key={i}
+                  key={project.projectName || index}
                   className={
                     isDark
                       ? `dark-mode project-card project-card-dark ${categoryClasses}`
@@ -69,7 +106,7 @@ export default function StartupProject() {
                       <div className="category-badges">
                         {categories.map((cat, idx) => (
                           <span key={idx} className={`category-badge ${cat}`}>
-                            {categoryLabelMap[cat] || cat}
+                            {t.projects.categoryLabels?.[cat] || cat}
                           </span>
                         ))}
                       </div>

@@ -215,7 +215,7 @@ const workExperiences = {
       bannerColor: "#0b3954"
     },
     {
-      companylogo: require("./assets/images/synctaxi-logo.png"),
+      companylogo: require("./assets/images/sirataksi.png"),
       bannerColor: "#f5c400"
     }
   ],
@@ -335,6 +335,7 @@ const bigProjects = {
     {
       projectName:
         "Pseudo Etiketli Anahtar Nokta Tespiti & Feature Extraction (ML)",
+      display: false,
       category: ["ai"],
       projectDesc:
         "Görüntülerde anahtar noktaları otomatik tespit edip anlamlı özellikler çıkaran bir yapay zekâ modeli geliştirdim. Sistem, görüntü eşleştirme ve sahne analizinde kullanılmak üzere optimize edildi.",
@@ -360,7 +361,7 @@ const bigProjects = {
     {
       //image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Akıllı Çevresel İzleme ve Kontrol Sistemi (Verilog, C)",
-      category: ["hardware", "systems"],
+      category: ["embedded", "systems"],
       projectDesc:
         "FPGA–MCU arasında çoklu sensör verilerini gerçek zamanlı işleyen ve çift yönlü haberleşmeyle kontrol sağlayan bir izleme sistemi tasarladım. Görsel ve işitsel uyarı mekanizmalarıyla gerçek zamanlı durum takibi sağlandı.",
       footerLink: [
@@ -374,7 +375,7 @@ const bigProjects = {
     
     {
       projectName: "İşletim Sistemi ve CPU Simülatörü (Assembly, Python)",
-      category: ["systems"],
+      category: ["embedded", "systems"],
       projectDesc:
         "Custom bir komut seti üzerinde çalışan bir CPU simülatörü ve temel bir işletim sistemi çekirdeği geliştirdim. CPU tarafında bellek yönetimi, kullanıcı/çekirdek modları ve syscall yapısını oluşturdum; OS tarafında thread kontrol blokları, round-robin scheduler ve context switching mekanizmalarını tasarlayarak çoklu thread çalıştırmayı sağladım.",
       footerLink: [

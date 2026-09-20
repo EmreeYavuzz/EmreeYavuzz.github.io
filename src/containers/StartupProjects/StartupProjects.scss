@@ -49,7 +49,7 @@
   background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
 }
 
-.project-card.category-hardware::before {
+.project-card.category-embedded::before {
   background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
 }
 
@@ -100,7 +100,7 @@
   background: linear-gradient(90deg, #a8edea 0%, #f093fb 50%, #fed6e3 100%);
 }
 
-.project-card.category-hardware.category-systems::before {
+.project-card.category-embedded.category-systems::before {
   background: linear-gradient(90deg, #43e97b 0%, #fa709a 50%, #fee140 100%);
 }
 
@@ -151,6 +151,39 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.project-filter-button {
+  padding: 0.55rem 1rem;
+  border: 1px solid $buttonColor;
+  border-radius: 999px;
+  background: transparent;
+  color: $buttonColor;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-filter-button:hover,
+.project-filter-button.active {
+  background: $buttonColor;
+  color: $lightBackground3;
+  transform: translateY(-1px);
+}
+
+.project-filter-button:focus-visible {
+  outline: 3px solid rgba(102, 126, 234, 0.45);
+  outline-offset: 2px;
 }
 
 /* Tablet görünümü (2 kolon) */
@@ -226,7 +259,7 @@
   background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
 }
 
-.category-badge.hardware {
+.category-badge.embedded {
   background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
 }
 

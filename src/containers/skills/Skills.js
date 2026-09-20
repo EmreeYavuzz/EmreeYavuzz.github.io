@@ -39,15 +39,17 @@ export default function Skills() {
             >
               {t.skills.title}{" "}
             </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
-              }
-            >
-              {t.skills.subTitle}
-            </p>
+            {t.skills.subTitle ? (
+              <p
+                className={
+                  isDark
+                    ? "dark-mode subTitle skills-text-subtitle"
+                    : "subTitle skills-text-subtitle"
+                }
+              >
+                {t.skills.subTitle}
+              </p>
+            ) : null}
             <SoftwareSkill />
             <div>
               {t.skills.skillsList.map((skills, i) => {

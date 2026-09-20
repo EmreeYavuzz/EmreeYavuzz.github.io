@@ -86,6 +86,16 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.date}
         </h5>
+        {cardInfo.website ? (
+          <a
+            className="experience-website-link"
+            href={cardInfo.website}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {cardInfo.websiteLabel || cardInfo.website}
+          </a>
+        ) : null}
         <p
           className={
             isDark

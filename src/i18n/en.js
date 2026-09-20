@@ -19,23 +19,22 @@ export const en = {
   greeting: {
     title: "Hi, I'm Emre 👋",
     subTitle:
-      "I work on software verification and test automation for embedded and avionics systems while continuing to build SıraTaksi as a co-founder. My experience spans Python-based test automation, communication protocols, real-time systems, and backend/mobile product development.",
-    resumeButton: "Download Resume",
+      "I work on embedded and avionics software verification and testing at ASELSAN MEOS. At the same time, I continue the technical development of SıraTaksi as a co-founder and part-time full-stack developer.",
     contactButton: "Contact Me"
   },
 
   // Skills Section
   skills: {
-    title: "What I Do",
-    subTitle:
-      "I verify embedded software and build reliable automation while continuing to develop production-ready products.",
+    title: "What I Use",
+    subTitle: "",
     skillsList: [
-      "⚡ Requirement-based software verification, test procedure development, and result analysis",
+      "⚡ Requirements review in IBM DOORS and preparation of traceable tests based on software requirements",
       "⚡ Python-based test automation, regression testing, and integration testing",
+      "⚡ Testing in Linux-based rehost environments, shared memory inspection, and internal state analysis",
       "⚡ Embedded Linux and real-time/embedded systems on FPGA and ARM SoC platforms",
       "⚡ RS-232/RS-422, CAN, Ethernet, and ICD-based communication testing",
-      "⚡ Linux, Wireshark, log analysis, and source-level debugging for root-cause investigation",
-      "⚡ Backend and mobile product development with Node.js, MongoDB, and Flutter",
+      "⚡ Analysis of communication and integration issues using Linux tools, Wireshark, application logs, and source-code inspection",
+      "⚡ Full-stack product development with Node.js, MongoDB, and Flutter",
       "⚡ CI/CD, containerized delivery, release management, and production deployment"
     ]
   },
@@ -84,14 +83,17 @@ export const en = {
     internshipTitle: "Internship Experience",
     workItems: [
       {
-        role: "Software Test Engineer",
-        company: "ASELSAN (via BİTES) — MEOS",
+        role: "Embedded Software Test Engineer",
+        company: "ASELSAN-MEOS",
         date: "June 2026 – Present",
-        desc: "Working through BİTES within ASELSAN MEOS on requirement-based verification and testing of embedded and avionics software.",
+        desc: "Working within ASELSAN MEOS on requirement-based verification and testing of embedded and avionics software.",
         descBullets: [
-          "Develop and maintain Python-based automated tests and execute regression and integration testing.",
-          "Verify RS-232/422, CAN and Ethernet communication interfaces and ICD-defined messages.",
-          "Analyze test and communication issues using Linux, Wireshark, logs and source-code inspection when required."
+          "Follow a DO-178C-aligned requirements-based verification approach; review requirements in IBM DOORS and prepare traceable test scenarios and procedures from those requirements.",
+          "Develop automated tests with Python and the project's UTS infrastructure, covering regression, integration, command/response, and test-result verification activities.",
+          "Execute tests in Linux-based rehost environments and inspect shared memory, internal system states, and low-level software behavior.",
+          "Verify RS-232/RS-422, CAN, and Ethernet interfaces and ICD-defined messages, including binary layouts, data fields, endianness, and CRC/checksum controls.",
+          "Analyze communication and integration issues using Wireshark, Linux tools, application logs, and source-code inspection when needed, supporting root-cause investigations.",
+          "Evaluate test results and contribute to verification records, test reports, and related technical documentation."
         ]
       },
       {
@@ -99,17 +101,20 @@ export const en = {
         company: "SıraTaksi",
         date: "September 2025 – Present",
         website: "https://sirataksi.com/",
-        desc: "Co-founder of SıraTaksi, a taxi stand management platform providing live queue tracking, driver availability, reservations and notifications.",
+        websiteLabel: "sirataksi.com",
+        desc: "As a co-founder of SıraTaksi, I continue to develop the product part-time, helping taxi stands manage live queues, driver availability, reservations, and notifications through a single platform.",
         descBullets: [
-          "Contribute across backend services, mobile application and operational workflows.",
-          "Work on real-time queue and reservation flows using Node.js/Express, MongoDB and Flutter.",
-          "Contribute to CI/CD, testing, release and production deployment processes."
+          "Develop Node.js/Express and MongoDB backend services for queue management, reservations, memberships, role-based authorization, and notification workflows.",
+          "Build Flutter mobile flows used by drivers for real-time queue tracking, station operations, reservations, and notifications.",
+          "Implement queue operations and mobile-backend synchronization designed to preserve data consistency during concurrent activity.",
+          "Contribute to product planning, operator workflows, and translating taxi stand needs into technical solutions.",
+          "Support CI/CD, automated testing, container publishing, release preparation, and production deployment processes."
         ]
       }
     ],
     internshipItems: [
       {
-        role: "Mobile App / Communication Intern",
+        role: "Full-Stack Software Development Intern",
         company: "ORTEM Electronics",
         date: "January 2025 – February 2025",
         desc: "Developed a Flutter-based communication application on Android capable of reading CAN data over USB-Serial.",
@@ -121,13 +126,13 @@ export const en = {
         ]
       },
       {
-        role: "FPGA Design Intern",
+        role: "Embedded Systems Intern",
         company: "TÜBİTAK BİLGEM",
         date: "July 2025 – August 2025",
         desc: "Designed scalable digital architectures using VHDL and Vivado; developed state machines and automated testbenches.",
         descBullets: [
           "Built a UART module with oversampling and metastability protection for reliable real-time data transmission.",
-          "Integrated the module into a MicroBlaze-based embedded system over AXI4-Lite, completing hardware-software integration.",
+          "Built practical proficiency in VHDL hardware description, synthesis, and implementation by deploying and validating designs directly on an FPGA board.",
           "Optimized end-to-end data processing pipelines in embedded environments to improve fault tolerance and sustainability."
         ]
       }
@@ -138,6 +143,18 @@ export const en = {
   projects: {
     title: "Projects",
     subtitle: "Some of the technical projects I've completed",
+    filterAll: "All",
+    categoryLabels: {
+      fullstack: "Full Stack",
+      frontend: "Frontend",
+      backend: "Backend",
+      mobile: "Mobile",
+      systems: "Systems",
+      embedded: "Embedded",
+      ai: "AI",
+      game: "Game",
+      web: "Web"
+    },
     projectsList: [
       {
         projectName: "FleetRent – High-Concurrency Rental Reservation System",
@@ -237,11 +254,5 @@ export const en = {
   openSourceProjects: {
     title: "Open Source Projects",
     moreProjects: "More Projects"
-  },
-
-  // Footer
-  footer: {
-    madeWith: "Made with ❤️",
-    by: "by Emre Yavuz"
   }
 };
